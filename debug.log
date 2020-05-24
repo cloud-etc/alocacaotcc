@@ -2495,3 +2495,276 @@ Acessaram a listagem de alocação
 "GET /admin/jsi18n/ HTTP/1.1" 200 7144
 C:\Users\shaba\ProjetosDjango\alocacao\venv\Lib\site-packages\auditlog\mixins.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2559
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4044
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/auditlog/logentry/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 705, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 709, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry. Check fields/fieldsets/exclude attributes of class LogEntryAdmin.
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 500 136188
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4044
+Internal Server Error: /admin/auditlog/logentry/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 705, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 709, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry. Check fields/fieldsets/exclude attributes of class LogEntryAdmin.
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 500 136188
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4044
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/auditlog/logentry/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 705, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 709, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry. Check fields/fieldsets/exclude attributes of class LogEntryAdmin.
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 500 136188
+Internal Server Error: /admin/auditlog/logentry/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 705, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 709, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry. Check fields/fieldsets/exclude attributes of class LogEntryAdmin.
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 500 136323
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4044
+Internal Server Error: /admin/auditlog/logentry/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 705, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 266, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 709, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (created, msg, resource_url, user_url) specified for LogEntry. Check fields/fieldsets/exclude attributes of class LogEntryAdmin.
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 500 136188
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/ HTTP/1.1" 200 6074
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4044
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 200 5647
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/add/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 4242
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 6403
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 3547
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5163
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 6686
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6244
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\mixins.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\mixins.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6247
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6247
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6328
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/1/change/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6448
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/add/ HTTP/1.1" 200 5653
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/add/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6445
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\admin.py changed, reloading.
+Watching for file changes with StatReloader
