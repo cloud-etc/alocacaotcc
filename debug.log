@@ -2832,3 +2832,85 @@ Watching for file changes with StatReloader
 "GET /admin/jsi18n/ HTTP/1.1" 200 7144
 C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\models.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6144
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/1/change/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5417
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6144
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/1/change/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6388
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/1/change/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5417
+"GET /admin/ HTTP/1.1" 200 8463
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5216
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6144
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/auditlog/logentry/1/change/ HTTP/1.1" 302 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5417
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6144
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/auditlog/logentry/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1551, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 676, in get_form
+    if change and hasattr(request, 'user') and not self.has_change_permission(request, obj):
+TypeError: has_change_permission() takes 2 positional arguments but 3 were given
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 500 115594
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6071
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5218
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6071
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5218
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6071
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5218
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5161
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9056
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 5218
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\auditlog\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9056
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6186
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
