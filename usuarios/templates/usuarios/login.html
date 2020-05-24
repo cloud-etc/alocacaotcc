@@ -1,0 +1,17 @@
+{% extends "alocar/login_base.html" %} {% load crispy_forms_tags %} {% block logado %}
+
+
+<div class="loginBox">
+    <h2>Acesso ao Sistema</h2>
+    <form method="post">
+        {% csrf_token %} {{ form|crispy }}
+        <input type="submit" name="" value="Acessar">
+    </form>
+    <!-- <a class="nav-link" href="#">Precisa alterar senha?</a>
+            <a class="nav-link" href="{% url 'usuarios:password_reset' %}">Nova senha</a>
+           -->
+</div>
+
+
+
+{% endblock logado %}

@@ -1,0 +1,118 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col">
+            <form class="form-horizontal" method="post">
+                {% csrf_token %}
+
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th>{{ form.turma.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.turma }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.turma.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.curso.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.curso }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.curso.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.periodo.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.periodo }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.periodo.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.disciplina.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.disciplina }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.disciplina.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.professor.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.professor }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.professor.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.qtdalunos.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.qtdalunos }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.qtdalunos.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.computador.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.computador }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.computador.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.projetor.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.projetor }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.projetor.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.internet.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.internet }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.internet.errors }}</th>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary">EDITAR</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock salaturma %}

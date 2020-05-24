@@ -1,0 +1,42 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+
+<div class="container">
+    <nav class="navbar navbar-dark primary-color justify-content-between">
+        <a class="navbar-brand" href="#"><strong>Edição de cadastro</strong></a>
+
+    </nav>
+
+    <nav class="navbar navbar-dark primary-color justify-content-between">
+        <form class="form-inline my-1" method="post">
+        {% csrf_token %}
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.turma.id_for_label }}">Turma</label> {{ form.turma }}
+        </div>
+
+        <div class="">
+            {{ form.sala.errors }}
+            <label for="{{ form.sala.id_for_label }}">Sala</label> {{ form.sala }}
+        </div>
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.dia.id_for_label }}">Dia</label> {{ form.dia }}
+        </div>
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.horario.id_for_label }}">Horário</label> {{ form.horario }}
+        </div>
+
+        <button class="btn btn-outline-white my-0" type="submit">EDITAR</button>
+
+    </form>
+    </nav>
+
+</div>
+
+
+
+{% endblock salaturma %}

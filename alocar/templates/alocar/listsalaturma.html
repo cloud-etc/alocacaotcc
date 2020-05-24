@@ -1,0 +1,283 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+
+<nav class="navbar navbar-dark primary-color justify-content-between">
+
+
+    <form class="form-inline my-1" method="post">
+        {% csrf_token %}
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.turma.id_for_label }}">Turma</label> {{ form.turma }}
+        </div>
+
+        <div class="">
+            {{ form.sala.errors }}
+            <label for="{{ form.sala.id_for_label }}">Sala</label> {{ form.sala }}
+        </div>
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.dia.id_for_label }}">Dia</label> {{ form.dia }}
+        </div>
+
+        <div class="">
+            {{ form.turma.errors }}
+            <label for="{{ form.horario.id_for_label }}">Horário</label> {{ form.horario }}
+        </div>
+
+        <button class="btn btn-outline-white my-0" type="submit">ADICIONAR ALOCAÇÃO</button>
+
+    </form>
+
+
+</nav>
+
+<div class="container-fluid ">
+    <div class="row ">
+        <div class="col-sm-8 ">
+            <nav class="navbar navbar-dark primary-color justify-content-between">
+
+                <form class="form-inline my-1 ">
+                    <div class="md-form my-0 ">
+                        <input type="text" class="form-control" id="varios" name="varios" placeholder="Pesquisar Turmas" aria-label="Pesquisar Turmas">
+                    </div>
+                    <button class="btn btn-outline-white my-0 " type="submit">Pesquisar Turmas</button>
+                </form>
+            </nav>
+        </div>
+
+
+        <div class="col-sm-4 ">
+            <nav class="navbar navbar-dark primary-color justify-content-between">
+
+                <form class="form-inline my-1 ">
+                    <div class="md-form my-0 ">
+                        <input type="text" class="form-control" id="varios1" name="varios1" placeholder="Pesquisar Salas" aria-label="Pesquisar Salas">
+                    </div>
+                    <button class="btn btn-outline-white my-0" type="submit">Pesquisar Salas</button>
+                </form>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="row ">
+
+        <div class="col-sm-8 ">
+            {% block messages %} {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} ">
+                {{ message }}
+            </div>
+            {% endfor %} {% endblock messages %}
+
+            <table class="table table-hover table-sm ">
+                <thead class="primary-color white-text ">
+                    <tr class="table-active ">
+                        <th>
+                            TURMA
+                        </th>
+                        <th>
+                            CURSO
+                        </th>
+                        <th>
+                            PERIODO
+                        </th>
+                        <th>
+                            DISCIPLINA
+                        </th>
+                        <th>
+                            PROFESSOR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            ALUNOS
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            COMPUTADOR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            PROJETOR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            INTERNET
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for turma in turmapage %}
+                    <tr>
+                        <td>
+                            {{turma.turma}}
+                        </td>
+                        <td>
+                            {{turma.curso}}
+                        </td>
+                        <td>
+                            {{turma.periodo}}
+                        </td>
+
+                        <td>
+                            {{turma.disciplina}}
+                        </td>
+                        <td>
+                            {{turma.professor}}
+                        </td>
+                        <td style="width: 50px; text-align: center ">
+                            {{turma.qtdalunos}}
+                        </td>
+                        <td style="text-align: center ">
+                            {% if turma.computador %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                        <td style="text-align: center ">
+                            {% if turma.projetor %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                        <td style="text-align: center ">
+                            {% if turma.internet %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <nav class="Page navigation ">
+                <ul class="pagination pagination-lg justify-content-center ">
+
+                    {% if turmapage.has_previous %}
+                    <li class="page-item text-primary ">
+                        <a class="page-link text-primary " href="?page={{ turmapage.previous_page_number }} " aria-label="Anterior ">
+                            <i class="fas fa-arrow-left "></i>
+                        </a>
+                    </li>
+                    {% endif %} {% if turmapage.paginator.num_pages %}
+                    <li class="page-item active ">
+                        <a class="page-link " href="?page={{ turmapage.number }} ">
+            
+                            {{ turmapage.number }} de {{ turmapage.paginator.num_pages }}
+            
+                            <span class="sr-only ">(current)</span>
+                        </a>
+                    </li>
+                    {% endif %} {% if turmapage.has_next %}
+                    <li class="page-item text-primary ">
+                        <a class="page-link text-primary " href="?page={{ turmapage.next_page_number }} " aria-label="Próximo ">
+                            <i class="fas fa-arrow-right "></i>
+                        </a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-sm-4 ">
+            {% block messagesa %} {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} ">
+                {{ message }}
+            </div>
+            {% endfor %} {% endblock messagesa %}
+
+            <table class="table table-hover table-sm ">
+                <thead class="primary-color white-text ">
+                    <tr>
+                        <th>
+                            BLOCO
+                        </th>
+                        <th>
+                            SALA
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            CAPACIDADE
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            COMPUTADOR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            PROJETOR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            INTERNET
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for sala in salapage %}
+                    <tr>
+                        <td>
+                            {{sala.bloco}}
+                        </td>
+                        <td>
+                            {{sala.sala}}
+                        </td>
+
+                        <td style="width: 50px; text-align: center ">
+                            {{sala.capmaxima}}
+                        </td>
+
+                        <td style="width: 50px; text-align: center ">
+                            {% if sala.computador %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                        <td style="width: 50px; text-align: center ">
+                            {% if sala.projetor %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                        <td style="width: 50px; text-align: center ">
+                            {% if sala.internet %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <nav class="Page navigation ">
+                <ul class="pagination pagination-lg justify-content-center ">
+
+                    {% if salapage.has_previous %}
+                    <li class="page-item text-primary ">
+                        <a class="page-link text-primary " href="?page={{ salapage.previous_page_number }} " aria-label="Anterior ">
+
+                            <i class="fas fa-arrow-left "></i>
+                        </a>
+                    </li>
+                    {% endif %} {% if salapage.paginator.num_pages %}
+                    <li class="page-item active ">
+                        <a class="page-link " href="?page={{ salapage.number }} ">
+                            {{ salapage.number }} de {{ salapage.paginator.num_pages }}
+            
+                            <span class="sr-only ">(current)</span>
+            
+                        </a>
+                    </li>
+                    {% endif %} {% if salapage.has_next %}
+                    <li class="page-item text-primary ">
+                        <a class="page-link text-primary " href="?page={{ salapage.next_page_number }} " aria-label="Próximo ">
+                            <i class="fas fa-arrow-right "></i>
+                        </a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.chave_turma').select2();
+    });
+</script>
+
+
+
+
+
+{% endblock salaturma %}

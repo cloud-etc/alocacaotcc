@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: django-auditlog
+Version: 0.4.7
+Summary: Audit log app for Django
+Home-page: https://github.com/jjkester/django-auditlog
+Author: Jan-Jelle Kester
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License

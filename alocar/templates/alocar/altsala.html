@@ -1,0 +1,96 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+<div class="container">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col">
+            <form class="form-horizontal" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th>{{ form.bloco.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.bloco }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.bloco.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.sala.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.sala }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.sala.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.capmaxima.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.capmaxima }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.capmaxima.errors }}</th>
+                        </tr>
+
+
+                        <tr style="display:none">
+                            <th>{{ form.disponivel.label_tag }}</th>
+                        </tr>
+                        <tr style="display:none">
+                            <th style="display:none">{{ form.disponivel }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.disponivel.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.internet.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.internet }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.internet.errors }}</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>{{ form.projetor.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.projetor }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.projetor.errors }}</th>
+                        </tr>
+
+
+
+                        <tr>
+                            <th>{{ form.computador.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.computador }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.computador.errors }}</th>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary">EDITAR</button>
+                </fieldset>
+
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock salaturma %}

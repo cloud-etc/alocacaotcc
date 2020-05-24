@@ -1,0 +1,22 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col">
+            {% if success %}
+            <p>Deletado com sucesso</p>
+            {% else %}
+            <h3>Tem certeza que deseja apagar?</h3><br>
+            <form method="POST">
+                {% csrf_token %}
+               <h3> Horário :
+                {{ horario.horario }}</h3><br>
+                <button type="submit" class="btn btn-danger">APAGAR</button>
+            </form>
+            {% endif %}
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock salaturma %}

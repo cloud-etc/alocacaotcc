@@ -1,0 +1,14 @@
+{% extends "alocar/login_base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Registro | {{ block.super }}{% endblock title %}
+
+{% block logado %}
+<div class="loginBox">
+			<form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+            <input type="submit" name="" value="Registrar">
+			</form>
+		</div>
+{% endblock logado %}

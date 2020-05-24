@@ -1,0 +1,24 @@
+{% extends 'alocar/base.html' %} {% block dashboard %}
+<div class="container">
+    <nav class="navbar navbar-dark primary-color justify-content-between">
+        <div class="position-absolute float-left">
+            <a class="navbar-brand float-left" href="#"><strong>Menu do sistema</strong></a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="list-group">
+                <a href="{% url 'usuarios:edit' %}" class="list-group-item">Dados do Usuario</a>
+                <a href="{% url 'usuarios:edit_password' %}" class="list-group-item">Alterar Senha</a>
+                <a href="{% url 'alocar:consultarturmas' %}" class="list-group-item">Turma sem alocação</a>
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            {% block index_content %}
+            <p><strong>Usuário</strong>: {{ user }}</p>
+            {% endblock index_content %}
+        </div>
+    </div>
+</div>
+{% endblock dashboard %}

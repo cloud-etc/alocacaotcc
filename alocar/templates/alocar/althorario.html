@@ -1,0 +1,29 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col">
+            <form class="form-horizontal" action="" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th>{{ form.horario.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.horario }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.horario.error }}</th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">EDITAR</button>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock salaturma %}

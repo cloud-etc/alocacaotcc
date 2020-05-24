@@ -1,0 +1,24 @@
+{% extends 'alocar/salaturma.html' %}  {% block addaloc %}
+
+<form class="form-inline" method="post">
+
+    <div class="form-group col-md-2 col-lg-2">
+        <label for="turma">Publish date minimum</label>
+        <input type="text" class="form-control" id="turma" name="date_min">
+    </div>
+    {% block messages %} {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+    </div>
+    {% endfor %} {% endblock messages %} {% csrf_token %} {% for error in form.non_field_errors %}
+    <div class="alert alert-danger">
+        {{ error }}
+    </div>
+    {% endfor %} {% for field in form %} {{ field.label }} {% render_field field class="form-control" %} {% for error in field.errors %} {{ error }} {% endfor %} {% endfor %}
+    <div class="form-group mb-2">
+        <button type="submit" class="btn btn-primary mb-2">ADICIONAR</button>
+    </div>
+</form>
+
+
+{% endblock addaloc %}

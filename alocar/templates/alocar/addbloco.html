@@ -1,0 +1,73 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-3">
+            {% block messages %} {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+            {% endfor %} {% endblock messages %}
+            <table class="table table-hover table-sm">
+                <thead class="primary-color white-text">
+                    <tr class="table-active">
+                        <th style="width: 70px; text-align: center">
+                            BLOCO
+                        </th>
+                        <th style="width: 50px; text-align: center">
+                            EDITAR
+                        </th>
+                        <th style="width: 50px; text-align: center">
+                            APAGAR
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for bloco in blocos %}
+                    <tr>
+                        <td>
+                            {{bloco}}
+                        </td>
+                        <th style="width: 50px; text-align: center">
+                            <a href="{% url 'alocar:altbloco' bloco.id %}">
+                                <i class="fas fa-edit" style="color:blue;"></i>
+                            </a>
+                            </td>
+                            <th style="width: 50px; text-align: center">
+                                <a href="{% url 'alocar:delbloco' bloco.id %}">
+                                    <i class="fas fa-trash" style="color:red;"></i>
+                                </a>
+                                </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-4">
+            <form class="form-horizontal" action="" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th>{{ form.bloco.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.bloco }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.bloco.errors }}</th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">ADICIONAR</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock salaturma %}

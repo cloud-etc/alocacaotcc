@@ -1,0 +1,77 @@
+{% extends 'alocar/basealocar.html' %}  {% block salaturma %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-3">
+            {% block messages %} {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+            {% endfor %} {% endblock messages %}
+
+            <table class="table table-hover table-sm">
+                <thead class=" primary-color white-text ">
+                    <tr class="table-active ">
+                        <th style="width: 70px; text-align: center ">
+                            HORÁRIO
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            EDITAR
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            APAGAR
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for horario in horarios %}
+                    <tr>
+                        <td>
+                            {{horario.horario}}
+                        </td>
+                        <td style="width: 50px; text-align: center ">
+                            <a href="{% url 'alocar:althorario' horario.id %} ">
+                                <i class="fas fa-edit " style="color:blue; "></i>
+                            </a>
+                        </td>
+                        <td style="width: 50px; text-align: center ">
+                            <a href="{% url 'alocar:delhorario' horario.id %} ">
+                                <i class="fas fa-trash " style="color:red; "></i>
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-4">
+            <form class="form-horizontal" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th>{{ form.horario.label_tag }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.horario }}</th>
+                        </tr>
+                        <tr>
+                            <th>{{ form.horario.errors }}</th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">ADICIONAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+{% endblock salaturma %}

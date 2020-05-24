@@ -1,0 +1,137 @@
+{% extends 'alocar/base.html' %} {% block dashboard %} {% block messages %} {% for message in messages %}
+<div class="alert alert-{{ message.tags }}">
+    {{ message }}
+</div>
+{% endfor %} {% endblock messages %}
+
+<nav class="navbar navbar-dark primary-color justify-content-between">
+    <div class="position-absolute float-left">
+        <a class="navbar-brand" href="#"><strong>Lista de Alocações</strong></a>
+    </div>
+
+    <form class="form-inline my-1">
+        <div class="md-form  my-0">
+            <input type="text" class="form-control" id="varios" name="varios" placeholder="Pesquisar Alocações" aria-label="Pesquisar Alocações">
+        </div>
+        <button class="btn btn-outline-white my-0" type="submit">Pesquisar Alocações</button>
+    </form>
+
+    <a class="btn btn-outline-white my-0" href="{% url 'alocar:export_users_xls' %}"><strong>Exportar Relatório</strong></a>
+</nav>
+
+<div class="container">
+
+    <table class="table table-hover table-sm">
+        <thead class="primary-color white-text">
+            <tr class="table-active">
+                <th>
+                    TURMA
+                </th>
+                <th>
+                    BLOCO
+                </th>
+                <th>
+                    SALA
+                </th>
+                <th>
+                    CURSO
+                </th>
+                <th>
+                    PERIODO
+                </th>
+                <th>
+                    DISCIPLINA
+                </th>
+                <th>
+                    PROFESSOR
+                </th>
+                <th>
+                    DIA
+                </th>
+                <th>
+                    HORÁRIO
+                </th>
+                <th style="width: 50px">
+                    EDITAR
+                </th>
+                <th style="width: 50px">
+                    APAGAR
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for alocar in alocapage %}
+            <tr>
+                <td>
+                    {{alocar.turma}}
+                </td>
+                <td>
+                    {{alocar.sala.bloco}}
+                </td>
+                <td>
+                    {{alocar.sala}}
+                </td>
+                <td>
+                    {{alocar.turma.curso}}
+                </td>
+
+                <td>
+                    {{alocar.turma.periodo}}
+                </td>
+                <td>
+                    {{alocar.turma.disciplina}}
+                </td>
+                <td>
+                    {{alocar.turma.professor}}
+                </td>
+                <td>
+                    {{alocar.dia}}
+                </td>
+                <td>
+                    {{alocar.horario}}
+                </td>
+                <td style="text-align: center">
+                    <a href="{% url 'alocar:altalocacao' alocar.id %}">
+                        <i class="fas fa-edit" style="color:blue;"></i>
+                    </a>
+                </td>
+                <td style="text-align: center">
+                    <a href="{% url 'alocar:delalocacao' alocar.id %}">
+                        <i class="fas fa-trash" style="color:red;"></i>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <nav class="Page navigation">
+        <ul class="pagination pagination-lg justify-content-center">
+
+            {% if alocapage.has_previous %}
+            <li class="page-item text-primary">
+                <a class="page-link text-primary" href="?page={{ alocapage.previous_page_number }}" aria-label="Anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </li>
+            {% endif %} {% if alocapage.paginator.num_pages %}
+            <li class="page-item active">
+                <a class="page-link" href="?page={{ listapage.number }}">
+    
+                    {{ alocapage.number }} de {{ alocapage.paginator.num_pages }}
+    
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            {% endif %} {% if alocapage.has_next %}
+            <li class="page-item text-primary">
+                <a class="page-link text-primary" href="?page={{ alocapage.next_page_number }}" aria-label="Próximo">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </li>
+            {% endif %}
+
+        </ul>
+    </nav>
+
+</div>
+{% endblock dashboard %}
