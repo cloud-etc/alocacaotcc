@@ -36,24 +36,6 @@
                 <th>
                     USUÁRIO
                 </th>
-                <th>
-                    PERIODO
-                </th>
-                <th>
-                    DISCIPLINA
-                </th>
-                <th>
-                    PROFESSOR
-                </th>
-                <th>
-                    DIA
-                </th>
-                <th>
-                    HORÁRIO
-                </th>
-                <th style="width: 50px">
-                    EDITAR
-                </th>
                 <th style="width: 50px">
                     APAGAR
                 </th>
@@ -79,29 +61,9 @@
                     {{alocar.timestamp}}
                 </td>
                 <td>
-                    {{alocar.actor_id}}
+                    {{alocar.actor}}
                 </td>
 
-                <td>
-                    {{alocar.turma.periodo}}
-                </td>
-                <td>
-                    {{alocar.turma.disciplina}}
-                </td>
-                <td>
-                    {{alocar.turma.professor}}
-                </td>
-                <td>
-                    {{alocar.dia}}
-                </td>
-                <td>
-                    {{alocar.horario}}
-                </td>
-                <td style="text-align: center">
-                    <a href="{% url 'alocar:altalocacao' alocar.id %}">
-                        <i class="fas fa-edit" style="color:blue;"></i>
-                    </a>
-                </td>
                 <td style="text-align: center">
                     <a href="{% url 'alocar:delalocacao' alocar.id %}">
                         <i class="fas fa-trash" style="color:red;"></i>
