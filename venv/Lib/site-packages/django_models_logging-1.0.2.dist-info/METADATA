@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-models-logging
+Version: 1.0.2
+Summary: Add logging of models from save, delete signals
+Home-page: https://bitbucket.org/legion_an/django-models-logging
+Author: legion
+Author-email: legion.andrey.89@gmail.com
+License: MIT
+Keywords: django logging,django history,django logging models,django history models
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django (>=2.0)
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+

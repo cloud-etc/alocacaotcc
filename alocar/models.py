@@ -1,8 +1,6 @@
 from django.conf import settings
 from django.db import models
 from django.urls import reverse
-from auditlog.models import AuditlogHistoryField
-from auditlog.registry import auditlog
 
 class Turma(models.Model):
     turma = models.CharField('Turma', max_length=8, unique=True)
@@ -16,7 +14,6 @@ class Turma(models.Model):
     computador = models.BooleanField('Computador', default=False)
     criada = models.DateTimeField('Criada', auto_now_add=True)
     alterada = models.DateTimeField('Alterada', auto_now=True)
-    history = AuditlogHistoryField()
 
     def __str__(self):
         return self.turma
@@ -34,15 +31,12 @@ class Turma(models.Model):
         self.professor = self.professor.upper()
         super(Turma, self).save(*args, **kwargs)
 
-auditlog.register(Turma)
-
 
 
 class Bloco(models.Model):
     bloco = models.CharField('Bloco', null=False, max_length=30, unique=True)
     criada = models.DateTimeField('Criado em', auto_now_add=True)
     alterado = models.DateTimeField('Alterado', auto_now=True)
-    history = AuditlogHistoryField()
 
     def __str__(self):
         return self.bloco
@@ -51,14 +45,11 @@ class Bloco(models.Model):
         self.bloco = self.bloco.upper()
         super(Bloco, self).save(*args, **kwargs)
 
-auditlog.register(Bloco)
-
 
 class Horario(models.Model):
     horario = models.CharField('Horário', max_length=23, help_text='Ex= 00:00/00:00', unique=True)
     criado = models.DateTimeField('Criado', auto_now_add=True)
     alterado = models.DateTimeField('Alterado', auto_now=True)
-    history = AuditlogHistoryField()
 
     def __str__(self):
         return self.horario
@@ -67,8 +58,6 @@ class Horario(models.Model):
         verbose_name = 'Horário'
         verbose_name_plural = 'Horários'
         ordering = ['horario']
-
-auditlog.register(Horario)
 
     
 class Sala(models.Model):
@@ -81,7 +70,6 @@ class Sala(models.Model):
     computador = models.BooleanField('Computador', default=False)
     criada = models.DateTimeField('Criada', auto_now_add=True)
     alterada = models.DateTimeField('Alterada ', auto_now=True)
-    history = AuditlogHistoryField()
 
     def __str__(self):
         return self.sala
@@ -94,8 +82,6 @@ class Sala(models.Model):
     def save(self, *args, **kwargs):
         self.sala = self.sala.upper()
         super(Sala, self).save(*args, **kwargs)
-
-auditlog.register(Sala)
 
 
 class Alocar(models.Model):
@@ -120,7 +106,6 @@ class Alocar(models.Model):
     dia = models.CharField('Dia', max_length=11, choices=dias)
     horario = models.ForeignKey(
         Horario, on_delete=models.PROTECT, null=True, blank=True)
-    history = AuditlogHistoryField()
 
    
     def __str__(self):
@@ -164,6 +149,4 @@ class Alocar(models.Model):
         verbose_name = "Alocação"
         verbose_name_plural = "Alocações"
         ordering = ['turma__curso', 'turma__periodo', 'turma__disciplina']
-
-auditlog.register(Alocar)
 

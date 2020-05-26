@@ -45,12 +45,12 @@
             {% for alocar in logEntry %}
             <tr>
                 <td>
-                    {{alocar.action}} -
-                    {% if alocar.action == 0 %}
+                    {{alocar.action_flag}} -
+                    {% if alocar.action_flag == 1 %}
                         <p>Adicionado</p>
-                    {% elif alocar.action == 1 %}
+                    {% elif alocar.action_flag == 2 %}
                         <p>Modificado</p>
-                    {% elif alocar.action == 2 %}
+                    {% elif alocar.action_flag == 3 %}
                         <p>Apagado</p>
                     {% endif %}
                 </td>
@@ -58,10 +58,10 @@
                     {{alocar.object_repr}}
                 </td>
                 <td>
-                    {{alocar.timestamp}}
+                    {{alocar.action_time}}
                 </td>
                 <td>
-                    {{alocar.actor}}
+                    {{alocar.user}}
                 </td>
 
                 <td style="text-align: center">

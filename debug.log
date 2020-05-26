@@ -3078,3 +3078,525 @@ Acessaram a listagem de alocação
 "GET /addhorario/ HTTP/1.1" 200 4460
 "GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
 "GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6029
+"GET /comum/ HTTP/1.1" 200 4122
+"GET /addturma/ HTTP/1.1" 200 9325
+"GET /usuarios/ HTTP/1.1" 200 2826
+"GET /conturma/ HTTP/1.1" 200 4396
+"GET /admin/ HTTP/1.1" 200 9056
+"GET /admin/ HTTP/1.1" 200 9056
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9056
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/1/change/ HTTP/1.1" 200 6186
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/auditlog/logentry/ HTTP/1.1" 200 6125
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /admin/auditlog/logentry/
+"GET /admin/auditlog/logentry/ HTTP/1.1" 404 8485
+"GET /admin/ HTTP/1.1" 200 7960
+"GET /admin/ HTTP/1.1" 500 59
+"GET /comum/ HTTP/1.1" 200 9019
+Watching for file changes with StatReloader
+"GET /comum/ HTTP/1.1" 200 9638
+"GET /comum/ HTTP/1.1" 200 9638
+"GET /comum/ HTTP/1.1" 200 9638
+"GET /comum/ HTTP/1.1" 200 9878
+"GET /comum/ HTTP/1.1" 200 9878
+"GET /comum/ HTTP/1.1" 200 9888
+"GET /comum/ HTTP/1.1" 200 9888
+Not Found: /delalocacao/10/
+"GET /delalocacao/10/ HTTP/1.1" 404 1745
+"GET /addsala/ HTTP/1.1" 200 8826
+"GET /addbloco/ HTTP/1.1" 200 5165
+"POST /addbloco/ HTTP/1.1" 200 5888
+"GET /addbloco/ HTTP/1.1" 200 5888
+"GET /comum/ HTTP/1.1" 200 9888
+"GET /comum/ HTTP/1.1" 200 9888
+Watching for file changes with StatReloader
+"GET /comum/ HTTP/1.1" 200 9888
+"GET /comum/ HTTP/1.1" 200 9888
+"GET /comum/ HTTP/1.1" 200 9888
+"GET /admin/ HTTP/1.1" 200 7960
+"GET /admin/ HTTP/1.1" 200 7960
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5200
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1088, in save_model
+    obj.save()
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\models.py", line 46, in save
+    super(Bloco, self).save(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: database is locked
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 197265
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5598
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /comum/ HTTP/1.1" 200 4120
+"GET /addsala/ HTTP/1.1" 200 8902
+"GET /addbloco/ HTTP/1.1" 200 6611
+"POST /addbloco/ HTTP/1.1" 200 7334
+"GET /addbloco/ HTTP/1.1" 200 7334
+"GET /comum/ HTTP/1.1" 200 4120
+Watching for file changes with StatReloader
+"GET /comum/ HTTP/1.1" 200 3480
+"GET /addsala/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/addsala/ HTTP/1.1" 200 2559
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/addsala/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 8788
+"GET /addbloco/ HTTP/1.1" 200 4442
+"POST /addbloco/ HTTP/1.1" 200 5165
+"POST /addbloco/ HTTP/1.1" 200 5888
+"GET /comum/ HTTP/1.1" 200 3480
+"GET /admin/ HTTP/1.1" 200 5360
+"GET /admin/ HTTP/1.1" 200 5360
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5200
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5598
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5815
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /comum/ HTTP/1.1" 200 4754
+"GET /comum/ HTTP/1.1" 200 4754
+"GET /comum/ HTTP/1.1" 200 4754
+"GET /comum/ HTTP/1.1" 200 4752
+"GET /comum/ HTTP/1.1" 200 4752
+"GET /comum/ HTTP/1.1" 200 4752
+"GET /comum/ HTTP/1.1" 200 4762
+"GET /admin/ HTTP/1.1" 200 5955
+"GET /admin/ HTTP/1.1" 200 5955
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/ HTTP/1.1" 200 3378
+"POST /admin/alocar/bloco/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5596
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /comum/ HTTP/1.1" 200 5983
+"GET /comum/ HTTP/1.1" 200 6043
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\simple_audit\signal.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\simple_audit\signal.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocacao\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/css/style.css HTTP/1.1" 200 1158
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6029
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /admin/ HTTP/1.1" 200 6483
+"GET /admin/ HTTP/1.1" 200 6483
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5417
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/history/ HTTP/1.1" 200 2347
+"GET /admin/ HTTP/1.1" 200 6483
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5417
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 6483
+"GET /admin/alocar/horario/ HTTP/1.1" 200 3789
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/horario/add/ HTTP/1.1" 200 4153
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/add/ HTTP/1.1" 200 4301
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/add/ HTTP/1.1" 200 4301
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/add/ HTTP/1.1" 200 4301
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+"POST /admin/alocar/horario/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/alocar/horario/add/ HTTP/1.1" 200 1888
+"POST /admin/login/?next=/admin/alocar/horario/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/add/ HTTP/1.1" 200 4153
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 6441
+"GET /admin/models_logging/change/ HTTP/1.1" 200 5737
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9100
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/1/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/ HTTP/1.1" 200 5983
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9100
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/1/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9389
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/1/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9389
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/1/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/ HTTP/1.1" 200 5983
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /addhorario/ HTTP/1.1" 200 4460
+"POST /addhorario/ HTTP/1.1" 200 5171
+"GET /admin/ HTTP/1.1" 200 7882
+"GET /admin/ HTTP/1.1" 200 7882
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6390
+"GET /admin/models_logging/change/2/change/ HTTP/1.1" 200 9484
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/2/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6642
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9100
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/change/1/revert/ HTTP/1.1" 200 1897
+"POST /admin/models_logging/change/1/revert/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6868
+"GET /admin/models_logging/change/1/revert/ HTTP/1.1" 200 1897
+"GET /admin/ HTTP/1.1" 200 8241
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 6859
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/revision/ HTTP/1.1" 200 2899
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 6859
+Watching for file changes with StatReloader
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 6859
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 6859
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8241
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6747
+"GET /admin/ HTTP/1.1" 200 8241
+"GET /admin/usuarios/user/ HTTP/1.1" 200 7016
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8241
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6747
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9100
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/change/1/revert/ HTTP/1.1" 200 1897
+"POST /admin/models_logging/change/1/revert/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6868
+"GET /admin/models_logging/change/1/revert/ HTTP/1.1" 200 1897
+"GET /admin/models_logging/change/1/change/ HTTP/1.1" 200 9100
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6747
+"GET /admin/models_logging/ HTTP/1.1" 200 2918
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 6859
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/revision/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/models_logging/revision/ HTTP/1.1" 200 1898
+"GET /static/admin/css/login.css HTTP/1.1" 200 1233
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6029
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"POST /admin/login/?next=/admin/models_logging/revision/ HTTP/1.1" 302 0
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7251
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"POST /admin/models_logging/revision/ HTTP/1.1" 200 2899
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7251
+"GET /admin/ HTTP/1.1" 200 8241
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 3547
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5163
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8524
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7541
+"GET /admin/ HTTP/1.1" 200 8524
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7645
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/revision/ HTTP/1.1" 200 2899
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7645
+"GET /admin/ HTTP/1.1" 200 8524
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7541
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7549
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\apps.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7550
+"GET /admin/ HTTP/1.1" 200 8526
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8526
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7550
+"GET /admin/ HTTP/1.1" 200 8526
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7644
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8520
+Internal Server Error: /admin/models_logging/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Change has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 339, in result_list
+    'results': list(results(cl)),
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 306, in __init__
+    super().__init__(*items)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 229, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\utils.py", line 275, in lookup_field
+    value = attr()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\models_logging\models.py", line 67, in __str__
+    return "Modificação %s - %s " % (self.id, self.object_repr, self.date_created.strftime('%d-%m-%Y %H:%M'))
+TypeError: not all arguments converted during string formatting
+"GET /admin/models_logging/change/ HTTP/1.1" 500 336836
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/models_logging/change/ HTTP/1.1" 200 7499
+"GET /admin/models_logging/change/5/change/ HTTP/1.1" 200 9432
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/change/5/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/change/5/change/ HTTP/1.1" 200 9706
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/change/5/revert/ HTTP/1.1" 200 1985
+"POST /admin/models_logging/change/5/revert/ HTTP/1.1" 200 2142
+"POST /admin/models_logging/change/5/revert/ HTTP/1.1" 200 2142
+"GET /admin/models_logging/change/5/change/ HTTP/1.1" 200 9432
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\venv\Lib\site-packages\models_logging\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8858
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8858
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocacao\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/models_logging/revision/5/change/ HTTP/1.1" 200 8362
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/revision/5/change/ HTTP/1.1" 302 0
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 7702
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/models_logging/revision/ HTTP/1.1" 200 4618
+"POST /admin/models_logging/revision/ HTTP/1.1" 302 0
+"GET /admin/models_logging/revision/ HTTP/1.1" 200 4503
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9447
+"GET /admin/models_logging/change/ HTTP/1.1" 200 4770
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9447
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 4982
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5161
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 9383
+"GET /admin/models_logging/change/ HTTP/1.1" 200 6631
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144

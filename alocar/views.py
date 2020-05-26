@@ -1,6 +1,6 @@
 import xlwt
 from datetime import datetime
-from auditlog.models import LogEntry
+from django.contrib.admin.models import LogEntry
 from django.contrib.contenttypes.models import ContentType
 from django.db.models import F, Count
 from django.core.paginator import Paginator
