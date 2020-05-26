@@ -10,9 +10,11 @@ django-bootstrap4==1.1.1
 django-crispy-forms==1.9.0
 django-import-export==2.0.2
 django-jsonfield==1.4.0
+django-models-logging==1.0.2
 django-select2==7.2.3
 django-sortedm2m==3.0.0
 django-stdimage==5.0.2
+django-widget-tweaks==1.4.8
 et-xmlfile==1.0.1
 gunicorn==20.0.4
 jdcal==1.4.1
@@ -20,6 +22,7 @@ MarkupPy==1.14
 odfpy==1.4.1
 openpyxl==2.4.11
 Pillow==7.0.0
+progressbar2==3.51.3
 psycopg2==2.8.4
 python-dateutil==2.6.0
 python-decouple==3.3
