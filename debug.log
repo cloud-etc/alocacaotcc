@@ -3600,3 +3600,852 @@ Watching for file changes with StatReloader
 "GET /admin/ HTTP/1.1" 200 9383
 "GET /admin/models_logging/change/ HTTP/1.1" 200 6631
 "GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6029
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /usuarios/ HTTP/1.1" 200 2826
+"GET /conturma/ HTTP/1.1" 200 4396
+"GET /usuarios/ HTTP/1.1" 200 2826
+"GET /usuarios/editar-senha/ HTTP/1.1" 200 4422
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4293
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loaders\filesystem.py", line 23, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\shaba\\PycharmProjects\\alocacao\\alocar\\templates\\alocar\\listalocacao.html'
+"GET /listalocacao/ HTTP/1.1" 500 111101
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+"GET /listsalaturma/ HTTP/1.1" 200 9063
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4157
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4293
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4293
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4293
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4293
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4245
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4341
+"GET /listsalaturma/ HTTP/1.1" 200 9063
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4341
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4347
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4339
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4382
+"GET /listsalaturma/ HTTP/1.1" 200 9063
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4848
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4566
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4577
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4631
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4629
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4661
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4620
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4306
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4297
+"GET /usuarios/ HTTP/1.1" 200 2826
+"GET /usuarios/ HTTP/1.1" 200 2826
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4621
+"GET /usuarios/editar/ HTTP/1.1" 200 4336
+"GET /conturma/ HTTP/1.1" 200 4396
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4611
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4622
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4626
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4615
+"GET /export/xls/ HTTP/1.1" 200 5632
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4452
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4436
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4457
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4457
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4457
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4457
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4458
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' not found. 'export_segunda' is not a valid view function or pattern name.
+"GET /listalocacao/ HTTP/1.1" 500 170074
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' not found. 'export_segunda' is not a valid view function or pattern name.
+"GET /listalocacao/ HTTP/1.1" 500 170074
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 5017
+"GET /export7/xls/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /export2/xls/ HTTP/1.1" 200 5632
+"GET /export2/xls/ HTTP/1.1" 200 5632
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 5017
+"GET /listsalaturma/ HTTP/1.1" 200 8452
+"GET /addsala/ HTTP/1.1" 200 8826
+"POST /addsala/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 10392
+"GET /addturma/ HTTP/1.1" 200 9325
+"POST /addturma/ HTTP/1.1" 200 11176
+"GET /listsalaturma/ HTTP/1.1" 200 10926
+"POST /listsalaturma/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6137
+"GET /export2/xls/ HTTP/1.1" 200 5632
+"GET /altalocacao/1/ HTTP/1.1" 200 4526
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6209
+"GET /altalocacao/1/ HTTP/1.1" 200 4526
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6209
+"GET /addhorario/ HTTP/1.1" 200 5171
+"POST /addhorario/ HTTP/1.1" 200 5882
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6137
+"GET /altalocacao/1/ HTTP/1.1" 200 4568
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6209
+"GET /addhorario/ HTTP/1.1" 200 5882
+"POST /addhorario/ HTTP/1.1" 200 6593
+"GET /addsala/ HTTP/1.1" 200 10392
+"POST /addsala/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 11962
+"GET /listsalaturma/ HTTP/1.1" 200 12122
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6137
+"GET /altalocacao/1/ HTTP/1.1" 200 4645
+Internal Server Error: /altalocacao/1/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 531, in altAlocacao
+    alocacao.turma.esta_alocada()
+AttributeError: 'Turma' object has no attribute 'esta_alocada'
+"POST /altalocacao/1/ HTTP/1.1" 500 77471
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6137
+"GET /altalocacao/1/ HTTP/1.1" 200 4645
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6209
+"GET /addturma/ HTTP/1.1" 200 11176
+"POST /addturma/ HTTP/1.1" 200 13022
+"GET /listsalaturma/ HTTP/1.1" 200 13482
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6137
+"GET /altalocacao/1/ HTTP/1.1" 200 4679
+"POST /altalocacao/1/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6133
+"GET /listsalaturma/ HTTP/1.1" 200 13482
+"POST /listsalaturma/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 7253
+"GET /export2/xls/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /export2/xls/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 7253
+Internal Server Error: /export2/xls/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: export_segunda() missing 1 required positional argument: 'segunda'
+"GET /export2/xls/ HTTP/1.1" 500 66780
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /export2/xls/ HTTP/1.1" 200 5632
+"GET /export2/xls/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 7260
+"GET /export2/%3Cstr:dia/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 172537
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/\\(\\?P(?P<dia>[^/]+)\\[\\^\\/\\]\\+\\)\\/\\$$']
+"GET /listalocacao/ HTTP/1.1" 500 172895
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 172537
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 172537
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 172537
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/\\(\\?P(?P<dia>[^/]+)\\\\w\\+\\)\\/\\$$']
+"GET /listalocacao/ HTTP/1.1" 500 172814
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 172537
+"GET /listsalaturma/ HTTP/1.1" 200 13482
+"POST /listsalaturma/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 444, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/(?P<dia>[^/]+)\\/$']
+"GET /listalocacao/ HTTP/1.1" 500 173232
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 7253
+Internal Server Error: /export2/xls/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: export_segunda() missing 1 required positional argument: 'segunda'
+"GET /export2/xls/ HTTP/1.1" 500 66780
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /export2/xls/ HTTP/1.1" 200 0
+"GET /export2/xls/ HTTP/1.1" 200 0
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /export2/xls/
+"GET /export2/xls/ HTTP/1.1" 404 7128
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /export2/xls/
+"GET /export2/xls/ HTTP/1.1" 404 7132
+Not Found: /export2/xls/
+"GET /export2/xls/ HTTP/1.1" 404 7132
+Not Found: /export2/xls/
+"GET /export2/xls/ HTTP/1.1" 404 7132
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /export2/xls/
+"GET /export2/xls/ HTTP/1.1" 404 7132
+"GET /export3/xls/ HTTP/1.1" 200 5632
+"GET /export7/xls/ HTTP/1.1" 200 5632
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+Internal Server Error: /listalocacao/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py", line 445, in listAlocacao
+    return render(request, 'alocar/listalocacao.html', context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'export_segunda' with no arguments not found. 1 pattern(s) tried: ['export2\\/xls\\/(?P<dia>[^/]+)$']
+"GET /listalocacao/ HTTP/1.1" 500 172576
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 7253
+"GET /export2/xls/ HTTP/1.1" 200 4781
+Acessaram a listagem de alocação
+"GET /listalocacao/?varios=ter HTTP/1.1" 200 6137
+Acessaram a listagem de alocação
+"GET /listalocacao/?varios=seg HTTP/1.1" 200 6133
+"GET /export2/xls/ HTTP/1.1" 200 4781
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views.py changed, reloading.
+Watching for file changes with StatReloader
+Acessaram a listagem de alocação
+"GET /listalocacao/?varios=seg HTTP/1.1" 200 6133
+Acessaram a listagem de alocação
+"GET /listalocacao/?varios= HTTP/1.1" 200 7253
+"GET /export2/xls/ HTTP/1.1" 200 0

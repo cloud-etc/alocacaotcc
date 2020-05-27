@@ -29,6 +29,12 @@ urlpatterns = [
     path('delhorario/<int:id>/', views.delHorario, name='delhorario'),
     #  urls da view para exportar relatorio excel
     path('export/xls/', views.export_alocacoes_xls, name='export_users_xls'),
+    path('export2/xls/', views.export_segunda, name='export_segunda'),
+    path('export3/xls/', views.export_terca, name='export_terca'),
+    path('export4/xls/', views.export_quarta, name='export_quarta'),
+    path('export5/xls/', views.export_quinta, name='export_quinta'),
+    path('export6/xls/', views.export_sexta, name='export_sexta'),
+    path('export7/xls/', views.export_sabado, name='export_sabado'),
     # informa sobre a negacao de permissao
     path('permissao/', views.permissao, name='permissao'),
     path('comum/', views.comum, name='comum'),

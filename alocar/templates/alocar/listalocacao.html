@@ -16,11 +16,26 @@
         <button class="btn btn-outline-white my-0" type="submit">Pesquisar Alocações</button>
     </form>
 
-    <a class="btn btn-outline-white my-0" href="{% url 'alocar:export_users_xls' %}"><strong>Exportar Relatório</strong></a>
+
 </nav>
 
-<div class="container">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1">
+            <div class="list-group">
+                <a href="" class="list-group-item text-white btn-primary" style="padding:10px;">Relatórios</a>
+                <a class="list-group-item" href="{% url 'alocar:export_users_xls' %}"><strong>Integral</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_segunda' %}"><strong>Segunda</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_terca' %}"><strong>Terça</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_quarta' %}"><strong>Quarta</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_quinta' %}"><strong>Quinta</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_sexta' %}"><strong>Sexta</strong></a>
+                 <a class="list-group-item" href="{% url 'alocar:export_sabado' %}"><strong>Sábado</strong></a>
 
+
+            </div>
+        </div>
+        <div class="col-sm-11">
     <table class="table table-hover table-sm">
         <thead class="primary-color white-text">
             <tr class="table-active">
@@ -133,5 +148,8 @@
         </ul>
     </nav>
 
+            </div>
+
+        </div>
 </div>
 {% endblock dashboard %}

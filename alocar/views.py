@@ -1,5 +1,6 @@
 import xlwt
 from datetime import datetime
+from excel_response import ExcelResponse
 from django.contrib.admin.models import LogEntry
 from django.contrib.contenttypes.models import ContentType
 from django.db.models import F, Count
@@ -470,8 +471,6 @@ def altAlocacao(request, id):
         alocacao.dia = form.cleaned_data['dia']
         alocacao.horario = form.cleaned_data['horario']
 
-        alteraLocacao = alocacao
-
         if alocacao.maior():
             messages.info(
                 request, 'Quantidade de alunos é maior do que a capacidade da sala')
@@ -526,20 +525,13 @@ def altAlocacao(request, id):
 
         query = Alocar.objects.filter(turma=alocacao.turma)
 
+
         if query:
-            print(alocacao)
-            alocacao.turma.esta_alocada()
-            alteraLocacao.turma.nao_alocada()
-            alteraLocacao = alocacao
-            alteraLocacao.save()
+            alocacao.save()
             return redirect('alocar:listalocacao')
         else:
-            if query:
-                alocacao.save()
-                return redirect('alocar:listalocacao')
-            else:
-                form.save()
-                return redirect('alocar:listalocacao')
+            form.save()
+            return redirect('alocar:listalocacao')
 
     return render(request, 'alocar/altalocacao.html', {'form': form})
 
@@ -786,6 +778,206 @@ def export_alocacoes_xls(request):
     wb.save(response)
     return response
 
+def export_segunda(request):
+    objs = Alocar.objects.filter(dia="segunda")
+    return ExcelResponse(objs)
+
+# def export_segunda(request, *segunda):
+#     MDATA = datetime.now().strftime('%d-%m-%Y')
+#     response = HttpResponse(content_type='application/ms-excel')
+#     response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+#
+#     wb = xlwt.Workbook(encoding='utf-8')
+#     ws = wb.add_sheet('Alocacoes')
+#
+#     # Sheet header, first row
+#     row_num = 0
+#
+#     font_style = xlwt.XFStyle()
+#     font_style.font.bold = True
+#
+#     columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+#
+#     for col_num in range(len(columns)):
+#         ws.write(row_num, col_num, columns[col_num], font_style)
+#
+#     # Sheet body, remaining rows
+#     font_style = xlwt.XFStyle()
+#
+#     # rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+#     rows = Alocar.objects.filter(dia=segunda).values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+#     for row in rows:
+#         row_num += 1
+#         for col_num in range(len(row)):
+#             ws.write(row_num, col_num, row[col_num], font_style)
+#
+#     wb.save(response)
+#     return response
+
+
+def export_terca(request):
+    MDATA = datetime.now().strftime('%d-%m-%Y')
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Alocacoes')
+
+    # Sheet header, first row
+    row_num = 0
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, row[col_num], font_style)
+
+    wb.save(response)
+    return response
+
+
+def export_quarta(request):
+    MDATA = datetime.now().strftime('%d-%m-%Y')
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Alocacoes')
+
+    # Sheet header, first row
+    row_num = 0
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, row[col_num], font_style)
+
+    wb.save(response)
+    return response
+
+
+def export_quinta(request):
+    MDATA = datetime.now().strftime('%d-%m-%Y')
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Alocacoes')
+
+    # Sheet header, first row
+    row_num = 0
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, row[col_num], font_style)
+
+    wb.save(response)
+    return response
+
+
+def export_sexta(request):
+    MDATA = datetime.now().strftime('%d-%m-%Y')
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Alocacoes')
+
+    # Sheet header, first row
+    row_num = 0
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, row[col_num], font_style)
+
+    wb.save(response)
+    return response
+
+
+def export_sabado(request):
+    MDATA = datetime.now().strftime('%d-%m-%Y')
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="alocacoes.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Alocacoes')
+
+    # Sheet header, first row
+    row_num = 0
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+
+    columns = ['BLOCO','SALA','CURSO','PERIODO','DISCIPLINA','PROFESSOR','DIA','HORARIO']
+
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = Alocar.objects.all().values_list('sala__bloco__bloco','sala__sala','turma__curso','turma__periodo','turma__disciplina','turma__professor','dia','horario__horario')
+
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, row[col_num], font_style)
+
+    wb.save(response)
+    return response
 
 
 def permissao(request):
