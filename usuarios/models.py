@@ -15,6 +15,7 @@ class User(AbstractBaseUser, PermissionsMixin):
             'seguintes caracteres: @/./+/-/_', 'invalid')]
     )
     email = models.EmailField('E-mail', unique=True)
+    nrg = models.CharField('Nº Identidade', max_length=10, null=False, unique=True)
     name = models.CharField('Nome', max_length=100, blank=True)
     is_active = models.BooleanField('Está ativo?', blank=True, default=True)
     is_staff = models.BooleanField('É da equipe?', blank=True, default=True)
@@ -23,7 +24,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['email']
+    REQUIRED_FIELDS = ['email','nrg']
 
     def __str__(self):
         return self.username

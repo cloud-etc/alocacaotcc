@@ -89,8 +89,11 @@
                         <th>
                             PROFESSOR
                         </th>
-                        <th style="width: 50px; text-align: center ">
+                        <th>
                             ALUNOS
+                        </th>
+                        <th style="width: 50px; text-align: center ">
+                            ALOCADA
                         </th>
                         <th style="width: 50px; text-align: center ">
                             COMPUTADOR
@@ -125,6 +128,13 @@
                         <td style="width: 50px; text-align: center ">
                             {{turma.qtdalunos}}
                         </td>
+
+                        <td style="text-align: center ">
+                            {% if turma.alocada %}
+                            <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}
+                            <i class="glyphicon glyphicon-remove-circle " style="color:red; "></i> {% endif %}
+                        </td>
+
                         <td style="text-align: center ">
                             {% if turma.computador %}
                             <i class="glyphicon glyphicon-ok-circle " style="color:green; "></i> {% else %}

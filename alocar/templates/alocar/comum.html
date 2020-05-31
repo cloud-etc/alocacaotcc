@@ -5,18 +5,7 @@
 {% endfor %} {% endblock messages %}
 
 <nav class="navbar navbar-dark primary-color justify-content-between">
-    <div class="position-absolute float-left">
-        <a class="navbar-brand" href="#"><strong>Lista de Alocações</strong></a>
-    </div>
-
-    <form class="form-inline my-1">
-        <div class="md-form  my-0">
-            <input type="text" class="form-control" id="varios" name="varios" placeholder="Pesquisar Alocações" aria-label="Pesquisar Alocações">
-        </div>
-        <button class="btn btn-outline-white my-0" type="submit">Pesquisar Alocações</button>
-    </form>
-
-    <a class="btn btn-outline-white my-0" href="{% url 'alocar:export_users_xls' %}"><strong>Exportar Relatório</strong></a>
+    <h4 class="text-white">Lista de Logs</h4>
 </nav>
 
 <div class="container">

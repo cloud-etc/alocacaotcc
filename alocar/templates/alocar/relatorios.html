@@ -5,6 +5,10 @@
 {% endfor %} {% endblock messages %}
 
 <nav class="navbar navbar-dark primary-color justify-content-between">
+    <h4 class="text-white">RELATÓRIOS DE ALOCAÇÕES</h4>
+</nav>
+
+<nav class="navbar navbar-dark primary-color justify-content-between">
     <div class="position-absolute float-left">
         <a class="navbar-brand" href="#"><strong>Lista de Alocações</strong></a>
     </div>
@@ -15,8 +19,13 @@
         </div>
         <button class="btn btn-outline-white my-0" type="submit">Pesquisar Alocações</button>
     </form>
-    <a class="btn btn-outline-white my-0" href="{% url 'alocar:telapararelatorio' %}">Relatórios</a>
 
+    <form class="form-inline my-1" action="{% url 'alocar:relatorios' %}" method="get">
+        <div class="md-form  my-0">
+            <input type="text" class="form-control" id="filtrado" name="filtrado" placeholder="Filtrar Relatório" aria-label="Pesquisar Alocações">
+        </div>
+        <button class="btn btn-outline-white my-0" type="submit">Filtrar Relatório</button>
+    </form>
 </nav>
 
 <div class="container-fluid">
@@ -55,9 +64,6 @@
                 <th>
                     HORÁRIO
                 </th>
-                <th style="width: 50px">
-                    APAGAR
-                </th>
             </tr>
         </thead>
         <tbody>
@@ -90,11 +96,6 @@
                 </td>
                 <td>
                     {{alocar.horario}}
-                </td>
-                <td style="text-align: center">
-                    <a href="{% url 'alocar:delalocacao' alocar.id %}">
-                        <i class="fas fa-trash" style="color:red;"></i>
-                    </a>
                 </td>
             </tr>
             {% endfor %}

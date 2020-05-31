@@ -1,41 +1,46 @@
 from django.urls import path
-from . import views
+from alocar.views.alocar.views import listAlocacao, listSalaTurma, \
+    altAlocacao, delAlocacao, home, permissao1, comum, export_alocacoes, relatorios, telapararelatorio
+from alocar.views.bloco.views import addBloco, altBloco, delBloco, permissao2
+from alocar.views.horario.views import addHorario, altHorario, delHorario, permissao3
+from alocar.views.sala.views import addSala, altSala, delSala, permissao4
+from alocar.views.turma.views import addTurma, altTurma, delTurma, consultarTurmas, permissao5
 
 app_name='alocar'
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', home, name='home'),
     # urls das views alocacao
-    path('listsalaturma/', views.listSalaTurma, name='listsalaturma'),
-    path('listalocacao/', views.listAlocacao, name='listalocacao'),
-    path('altalocacao/<int:id>/', views.altAlocacao, name='altalocacao'),
-    path('delalocacao/<int:id>/', views.delAlocacao, name='delalocacao'),
+    path('listsalaturma/', listSalaTurma, name='listsalaturma'),
+    path('listalocacao/', listAlocacao, name='listalocacao'),
+    path('altalocacao/<int:id>/', altAlocacao, name='altalocacao'),
+    path('delalocacao/<int:id>/', delAlocacao, name='delalocacao'),
     # urls das views turma
-    path('addturma/', views.addTurma, name='addturma'),
-    path('conturma/', views.consultarTurmas, name='consultarturmas'),
-    path('altturma/<int:id>/', views.altTurma, name='altturma'),
-    path('delturma/<int:id>/', views.delTurma, name='delturma'),
+    path('addturma/', addTurma, name='addturma'),
+    path('conturma/', consultarTurmas, name='consultarturmas'),
+    path('altturma/<int:id>/', altTurma, name='altturma'),
+    path('delturma/<int:id>/', delTurma, name='delturma'),
     #  urls das views sala
-    path('addsala/', views.addSala, name='addsala'),
-    path('altsala/<int:id>/', views.altSala, name='altsala'),
-    path('delsala/<int:id>/', views.delSala, name='delsala'),
+    path('addsala/', addSala, name='addsala'),
+    path('altsala/<int:id>/', altSala, name='altsala'),
+    path('delsala/<int:id>/', delSala, name='delsala'),
     #  urls das views bloco
-    path('addbloco/', views.addBloco, name='addbloco'),
-    path('altbloco/<int:id>/', views.altBloco, name='altbloco'),
-    path('delbloco/<int:id>/', views.delBloco, name='delbloco'),
+    path('addbloco/', addBloco, name='addbloco'),
+    path('altbloco/<int:id>/', altBloco, name='altbloco'),
+    path('delbloco/<int:id>/', delBloco, name='delbloco'),
     #  urls das views horario
-    path('addhorario/', views.addHorario, name='addhorario'),
-    path('althorario/<int:id>/', views.altHorario, name='althorario'),
-    path('delhorario/<int:id>/', views.delHorario, name='delhorario'),
+    path('addhorario/', addHorario, name='addhorario'),
+    path('althorario/<int:id>/', altHorario, name='althorario'),
+    path('delhorario/<int:id>/', delHorario, name='delhorario'),
     #  urls da view para exportar relatorio excel
-    path('export/xls/', views.export_alocacoes_xls, name='export_users_xls'),
-    path('export2/xls/', views.export_segunda, name='export_segunda'),
-    path('export3/xls/', views.export_terca, name='export_terca'),
-    path('export4/xls/', views.export_quarta, name='export_quarta'),
-    path('export5/xls/', views.export_quinta, name='export_quinta'),
-    path('export6/xls/', views.export_sexta, name='export_sexta'),
-    path('export7/xls/', views.export_sabado, name='export_sabado'),
+    path('todasrelatorios', export_alocacoes, name='export_alocacoes'),
+    path('relatorios/', relatorios, name='relatorios'),
+    path('irpararelatorio/', telapararelatorio, name='telapararelatorio'),
     # informa sobre a negacao de permissao
-    path('permissao/', views.permissao, name='permissao'),
-    path('comum/', views.comum, name='comum'),
+    path('permissao1/', permissao1, name='permissao1'),
+    path('permissao2/', permissao2, name='permissao2'),
+    path('permissao3/', permissao3, name='permissao3'),
+    path('permissao4/', permissao4, name='permissao4'),
+    path('permissao5/', permissao5, name='permissao5'),
+    path('logsistema/', comum, name='comum'),
 ]

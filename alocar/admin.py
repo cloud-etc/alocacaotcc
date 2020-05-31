@@ -1,11 +1,14 @@
 from django.contrib import admin
-from alocar.models import Horario, Turma, Sala, Bloco
+from alocar.models.bloco.models import Bloco
+from alocar.models.horario.models import Horario
+from alocar.models.sala.models import Sala
+from alocar.models.turma.models import Turma
 from import_export.admin import ImportExportModelAdmin
 
 
 @admin.register(Turma)
 class TurmaAdmin(ImportExportModelAdmin):
-    list_display = ('turma','curso','periodo','disciplina','professor','qtdalunos','internet','projetor','computador')
+    list_display = ('turma','curso','periodo','disciplina','alocada','professor','qtdalunos','internet','projetor','computador')
     search_fields = ('turma','curso','professor','disciplina')
     list_filter = ('curso','periodo','professor','disciplina')
 

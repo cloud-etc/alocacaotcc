@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     'usuarios',
     'bootstrap4',
     'stdimage',
-    'models_logging',
+    # 'models_logging',
 ]
 
 LOGGING_MODELS = (
@@ -38,13 +38,6 @@ LOGGING_MODELS = (
     'alocar',     # logging of all models in this app
 )
 
-def can_revert(request, obj):
-    return request.user.username == 'admin'
-
-LOGGING_REVERT_IS_ALLOWED = can_revert
-LOGGING_CAN_DELETE_REVISION = True
-LOGGING_CAN_DELETE_CHANGES = True
-LOGGING_CAN_CHANGE_CHANGES = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -56,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'models_logging.middleware.LoggingStackMiddleware',
 
 ]
 
