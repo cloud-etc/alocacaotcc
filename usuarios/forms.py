@@ -33,12 +33,12 @@ class PasswordResetForm(forms.Form):
             'Nenhum usuário encontrado com esse RG'
         )
 
-    # def save(self):
-    #     user = User.objects.get(nrg=self.cleaned_data['nrg'])
-    #     key = generate_hash_key(user.username)
-    #     reset = PasswordReset(key=key, user=user)
-    #     reset.save()
-    #     return reset
+    def save(self):
+        user = User.objects.get(nrg=self.cleaned_data['nrg'])
+        key = generate_hash_key(user.username)
+        reset = PasswordReset(key=key, user=user)
+        reset.save()
+        return reset
 
 class RegisterForm(forms.ModelForm):
     password1 = forms.CharField(label='Senha', widget=forms.PasswordInput)

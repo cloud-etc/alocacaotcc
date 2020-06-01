@@ -1,0 +1,83 @@
+{% extends 'alocar/base.html' %} {% block dashboard %} {% block messages %} {% for message in messages %}
+<div class="alert alert-{{ message.tags }}">
+    {{ message }}
+</div>
+{% endfor %} {% endblock messages %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-10">
+            <nav class="navbar navbar-dark primary-color justify-content-between">
+    <h3 class="text-white">Detalhes da Alocação</h3>
+</nav>
+    <table class="table table-hover table-sm">
+        <thead class="primary-color white-text">
+            <tr class="table-active">
+                <th style="width:150px;">
+                    CRIADA
+                </th>
+
+                <th>
+                    CRIADA P/ USUÁRIO
+                </th>
+
+                <th>
+                    TURMA
+                </th>
+
+                <th>
+                    SALA
+                </th>
+
+                <th>
+                    DIA
+                </th>
+                <th>
+                    HORÁRIO
+                </th>
+                <th style="width: 50px">
+                    VOLTAR
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{alocar.criada }}
+                </td>
+
+                <td>
+                    {{alocar.user}}
+                </td>
+
+                <td>
+                    {{alocar.turma}}
+                </td>
+
+                <td>
+                    {{alocar.sala}}
+                </td>
+
+                <td>
+                    {{alocar.dia}}
+                </td>
+                <td>
+                    {{alocar.horario}}
+                </td>
+                <td style="text-align: center">
+                    <a href="{% url 'alocar:listalocacao' %}">
+                        <i class="fas fa-eye" style="color:blue;"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+
+</div>
+{% endblock dashboard %}

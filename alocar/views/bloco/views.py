@@ -1,6 +1,3 @@
-import xlwt
-from datetime import datetime
-from excel_response import ExcelResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
@@ -21,7 +18,7 @@ def addBloco(request):
 
     blocos = Bloco.objects.all().order_by('bloco')
     context = {}
-    template_name = 'alocar/addbloco.html'
+    template_name = 'bloco/addbloco.html'
     form = AddBlocoForm(request.POST or None)
 
     if form.is_valid():
@@ -54,7 +51,7 @@ def altBloco(request, id):
             form.save()
         return redirect('alocar:addbloco')
 
-    return render(request, 'alocar/altbloco.html', {'form': form})
+    return render(request, 'bloco/altbloco.html', {'form': form})
 
 
 """
@@ -77,8 +74,7 @@ def delBloco(request, id):
             bloco = get_object_or_404(Bloco, pk=id)
             bloco.delete()
         return redirect('alocar:addbloco')
-    return render(request, 'alocar/delbloco.html')
-
+    return render(request, 'bloco/delbloco.html')
 
 
 def permissao2(request):

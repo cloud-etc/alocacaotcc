@@ -16,7 +16,7 @@ def comum(request):
     context = {
         "logEntry": logEntry
     }
-    return render(request, "alocar/comum.html", context)
+    return render(request, "alocar/listalog.html", context)
 
 """
 funcao que da acessoa pagin a principal do sistema
@@ -25,18 +25,6 @@ e ao dashboard
 def home(request):
     context = { }
     return render(request, 'alocar/home.html', context)
-
-"""
-consultar turmas sem alocação
-"""
-def consultarTurmas(request):
-    turmas = Turma.objects.raw(
-        'SELECT alocar_turma.id, alocar_turma.turma, alocar_turma.curso '
-        'FROM alocar_alocar INNER JOIN alocar_turma ON alocar_turma.id <> alocar_alocar.turma_id')
-
-    context = { }
-    context['consultarturmas'] = turmas
-    return render(request, 'alocar/consultarturmas.html', context)
 
 """
 funcao para cadastrar turma
@@ -68,7 +56,7 @@ def addTurma(request):
 
 
    
-    template_name = 'alocar/addturma.html'
+    template_name = 'turma/addturma.html'
     form = AddTurmaForm(request.POST or None)
 
     if form.is_valid():
@@ -128,7 +116,7 @@ def altTurma(request, id):
              form.save()
              return redirect('alocar:addturma')
 
-    return render(request, 'alocar/altturma.html', {'form': form})
+    return render(request, 'turma/altturma.html', {'form': form})
 
 
 
@@ -154,7 +142,7 @@ def delTurma(request, id):
             turma = get_object_or_404(Turma, pk=id)
             turma.delete()
         return redirect('alocar:addturma')
-    return render(request, 'alocar/delturma.html')
+    return render(request, 'turma/delturma.html')
 
 
 def permissao5(request):

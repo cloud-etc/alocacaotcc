@@ -5,11 +5,11 @@
 {% endfor %} {% endblock messages %}
 
 <nav class="navbar navbar-dark primary-color justify-content-between">
-    <h4 class="text-white">Lista de Logs</h4>
+    <h4 class="text-white">Lista de Ações dos Usuários</h4>
 </nav>
 
 <div class="container">
-
+  <div style="display: None">{{alocar.action_flag}}</div>
     <table class="table table-hover table-sm">
         <thead class="primary-color white-text">
             <tr class="table-active">
@@ -34,7 +34,6 @@
             {% for alocar in logEntry %}
             <tr>
                 <td>
-                    {{alocar.action_flag}} -
                     {% if alocar.action_flag == 1 %}
                         <p>Adicionado</p>
                     {% elif alocar.action_flag == 2 %}
@@ -54,7 +53,7 @@
                 </td>
 
                 <td style="text-align: center">
-                    <a href="{% url 'alocar:delalocacao' alocar.id %}">
+                    <a href="{% url 'alocar:delog' logentry.id %}">
                         <i class="fas fa-trash" style="color:red;"></i>
                     </a>
                 </td>
@@ -62,34 +61,5 @@
             {% endfor %}
         </tbody>
     </table>
-    <nav class="Page navigation">
-        <ul class="pagination pagination-lg justify-content-center">
-
-            {% if alocapage.has_previous %}
-            <li class="page-item text-primary">
-                <a class="page-link text-primary" href="?page={{ alocapage.previous_page_number }}" aria-label="Anterior">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-            </li>
-            {% endif %} {% if alocapage.paginator.num_pages %}
-            <li class="page-item active">
-                <a class="page-link" href="?page={{ listapage.number }}">
-
-                    {{ alocapage.number }} de {{ alocapage.paginator.num_pages }}
-
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            {% endif %} {% if alocapage.has_next %}
-            <li class="page-item text-primary">
-                <a class="page-link text-primary" href="?page={{ alocapage.next_page_number }}" aria-label="Próximo">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </li>
-            {% endif %}
-
-        </ul>
-    </nav>
-
 </div>
 {% endblock dashboard %}

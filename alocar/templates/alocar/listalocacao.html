@@ -56,6 +56,9 @@
                     HORÁRIO
                 </th>
                 <th style="width: 50px">
+                    DETALHES
+                </th>
+                <th style="width: 50px">
                     APAGAR
                 </th>
             </tr>
@@ -90,6 +93,11 @@
                 </td>
                 <td>
                     {{alocar.horario}}
+                </td>
+                <td style="text-align: center">
+                    <a href="{% url 'alocar:detalhealocacao' alocar.id %}">
+                        <i class="fas fa-eye" style="color:blue;"></i>
+                    </a>
                 </td>
                 <td style="text-align: center">
                     <a href="{% url 'alocar:delalocacao' alocar.id %}">

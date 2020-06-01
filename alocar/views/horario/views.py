@@ -19,7 +19,7 @@ def addHorario(request):
 
     horarios = Horario.objects.all().order_by('horario')
     context = {}
-    template_name = 'alocar/addhorario.html'
+    template_name = 'horario/addhorario.html'
     form = AddHorarioForm(request.POST or None)
     if form.is_valid():
         form.save()
@@ -53,7 +53,7 @@ def altHorario(request, id):
             form.save()
         return redirect('alocar:addhorario')
 
-    return render(request, 'alocar/althorario.html', {'form': form})
+    return render(request, 'horario/althorario.html', {'form': form})
 
 
 
@@ -77,7 +77,7 @@ def delHorario(request, id):
             horario.delete()
         return redirect('alocar:addhorario')
 
-    return render(request, 'alocar/delhorario.html', {"horario":horario})
+    return render(request, 'horario/delhorario.html', {"horario":horario})
 
 
 def permissao3(request):

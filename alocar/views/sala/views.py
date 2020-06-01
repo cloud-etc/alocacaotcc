@@ -30,7 +30,7 @@ def addSala(request):
         salas = Sala.objects.all().filter(disponivel=True)
 
 
-    template_name = 'alocar/addsala.html'
+    template_name = 'sala/addsala.html'
     form = AddSalaForm(request.POST or None)
 
     if form.is_valid():
@@ -83,7 +83,7 @@ def altSala(request, id):
             form.save()
             return redirect('alocar:addsala')
 
-    return render(request, 'alocar/altsala.html', {'form': form})
+    return render(request, 'sala/altsala.html', {'form': form})
 
 
 
@@ -110,7 +110,8 @@ def delSala(request, id):
             sala = get_object_or_404(Sala, pk=id)
             sala.delete()
         return redirect('alocar:addsala')
-    return render(request, 'alocar/delsala.html')
+    return render(request, 'sala/delsala.html')
+
 
 
 def permissao4(request):

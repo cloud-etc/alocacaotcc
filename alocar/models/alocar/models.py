@@ -9,7 +9,6 @@ from alocar.models.sala.models import Sala
 
 class Alocar(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
-    data = models.DateField('Data', auto_now=True, blank=True)
     turma = models.ForeignKey(
         Turma, on_delete=models.PROTECT, related_name='alocar', limit_choices_to={'alocada':False})
     sala = models.ForeignKey(

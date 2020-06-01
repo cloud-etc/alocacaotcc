@@ -4,7 +4,7 @@ class Turma(models.Model):
     turma = models.CharField('Turma', max_length=8, unique=True)
     curso = models.CharField('Curso', null=False, max_length=50)
     periodo = models.CharField('Periodo', null=False, max_length=50)
-    disciplina = models.CharField('Disciplina', max_length=50)
+    disciplina = models.CharField('Disciplina', null=False, max_length=50)
     qtdalunos = models.PositiveSmallIntegerField('Qtd')
     alocada = models.BooleanField('Alocada', default=False)
     professor = models.CharField('Professor', max_length=50)
