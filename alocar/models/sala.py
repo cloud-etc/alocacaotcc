@@ -1,5 +1,5 @@
 from django.db import models
-from alocar.models.bloco.models import Bloco
+from alocar.models.bloco import Bloco
 
 
 class Sala(models.Model):
@@ -21,9 +21,7 @@ class Sala(models.Model):
         verbose_name_plural = "Salas"
         ordering = ['sala',]
         
-    def save(self, *args, **kwargs):
-        self.sala = self.sala.upper()
-        super(Sala, self).save(*args, **kwargs)
+
 
 
 

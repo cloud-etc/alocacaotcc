@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
-from alocar.forms.bloco.forms import AddBlocoForm
-from alocar.models.sala.models import Bloco, Sala
-
+from alocar.forms.bloco import AddBlocoForm
+from alocar.models.sala import Sala
+from alocar.models.bloco import Bloco
 """
 funcao para cadastrar bloco
 """

@@ -1,5 +1,5 @@
 from django import forms
-from alocar.models.horario.models import Horario
+from alocar.models.horario import Horario
 
 
 class AddHorarioForm(forms.ModelForm):

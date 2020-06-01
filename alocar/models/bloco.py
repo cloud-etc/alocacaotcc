@@ -9,9 +9,6 @@ class Bloco(models.Model):
     def __str__(self):
         return self.bloco
 
-    def save(self, *args, **kwargs):
-        self.bloco = self.bloco.upper()
-        super(Bloco, self).save(*args, **kwargs)
 
 
 

@@ -12780,3 +12780,142 @@ C:\Users\shaba\PycharmProjects\alocacao\alocar\views\turma\views.py changed, rel
 Watching for file changes with StatReloader
 C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/mdb.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7319
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /addsala/ HTTP/1.1" 200 10429
+Internal Server Error: /addsala/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: alocar_sala.sala
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\sala\views.py", line 44, in addSala
+    form.save()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\forms\models.py", line 458, in save
+    self.instance.save()
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\models\sala\models.py", line 26, in save
+    super(Sala, self).save(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: alocar_sala.sala
+"POST /addsala/ HTTP/1.1" 500 167849
+"POST /addsala/ HTTP/1.1" 200 10519
+"POST /addsala/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 11999
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\sala\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\models\sala.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\horario.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\turma.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\models\bloco.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /addbloco/ HTTP/1.1" 200 5888
+"POST /addbloco/ HTTP/1.1" 200 6611
+"POST /addbloco/ HTTP/1.1" 200 6695
+"GET /altbloco/3/ HTTP/1.1" 200 3749
+"POST /altbloco/3/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6611
+"POST /addbloco/ HTTP/1.1" 200 6695
+"POST /addbloco/ HTTP/1.1" 200 7334
+"POST /addbloco/ HTTP/1.1" 200 7418
+C:\Users\shaba\PycharmProjects\alocacao\alocar\models\bloco.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\models\turma.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /addturma/ HTTP/1.1" 200 23792
+"GET /altturma/4/ HTTP/1.1" 200 6993
+"POST /altturma/4/ HTTP/1.1" 302 0
+"GET /addturma/ HTTP/1.1" 200 23792
+"GET /altturma/7/ HTTP/1.1" 200 6992
+"POST /altturma/7/ HTTP/1.1" 302 0
+"GET /addturma/ HTTP/1.1" 200 23792
+"GET /altturma/3/ HTTP/1.1" 200 6996
+"POST /altturma/3/ HTTP/1.1" 302 0
+"GET /addturma/ HTTP/1.1" 200 23792
+"GET /altturma/5/ HTTP/1.1" 200 6990
+"POST /altturma/5/ HTTP/1.1" 302 0
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /altsala/2/ HTTP/1.1" 200 6359
+"POST /altsala/2/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /altsala/1/ HTTP/1.1" 200 6375
+"POST /altsala/1/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 12211
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /addbloco/ HTTP/1.1" 200 7334
+"GET /delbloco/4/ HTTP/1.1" 200 3231
+"POST /delbloco/4/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6611
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /altalocacao/5 HTTP/1.1" 301 0
+Not Found: /altalocacao/5/
+"GET /altalocacao/5/ HTTP/1.1" 404 1750
+"GET /altalocacao/2 HTTP/1.1" 301 0
+Not Found: /altalocacao/2/
+"GET /altalocacao/2/ HTTP/1.1" 404 1750
+"GET /delalocacao/4/ HTTP/1.1" 200 3199
+"GET /altalocacao/4 HTTP/1.1" 301 0
+"GET /altalocacao/4/ HTTP/1.1" 200 4731
+"POST /altalocacao/4/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6597

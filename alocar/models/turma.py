@@ -30,13 +30,7 @@ class Turma(models.Model):
         ordering = ['curso', 'periodo']
 
 
-    def save(self, *args, **kwargs):
-        self.turma = self.turma.upper()
-        self.curso = self.curso.upper()
-        self.periodo = self.periodo.upper()
-        self.disciplina = self.disciplina.upper()
-        self.professor = self.professor.upper()
-        super(Turma, self).save(*args, **kwargs)
+
 
 
 

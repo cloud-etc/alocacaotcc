@@ -3,9 +3,9 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from alocar.forms.turma.forms import AddTurmaForm
-from alocar.models.alocar.models import Alocar
-from alocar.models.turma.models import Turma
+from alocar.forms.turma import AddTurmaForm
+from alocar.models.alocar import Alocar
+from alocar.models.turma import Turma
 
 import logging
 

@@ -1,9 +1,9 @@
 from django.conf import settings
 from django.db import models
 from django.urls import reverse
-from alocar.models.horario.models import Horario
-from alocar.models.turma.models import Turma
-from alocar.models.sala.models import Sala
+from alocar.models.horario import Horario
+from alocar.models.turma import Turma
+from alocar.models.sala import Sala
 
 
 

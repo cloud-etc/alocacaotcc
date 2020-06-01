@@ -8,10 +8,10 @@ from django.contrib import messages
 from django.views.generic import TemplateView
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Side, Font, PatternFill
-from alocar.forms.alocar.forms import AddAlocForm
-from alocar.models.alocar.models import Alocar
-from alocar.models.sala.models import Sala
-from alocar.models.turma.models import Turma
+from alocar.forms.alocar import AddAlocForm
+from alocar.models.alocar import Alocar
+from alocar.models.sala import Sala
+from alocar.models.turma import Turma
 
 import logging
 

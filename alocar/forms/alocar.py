@@ -1,5 +1,5 @@
 from django import forms
-from alocar.models.alocar.models import Alocar
+from alocar.models.alocar import Alocar
 
 
 class AddAlocForm(forms.ModelForm):

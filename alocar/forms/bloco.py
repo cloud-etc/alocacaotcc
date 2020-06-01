@@ -1,5 +1,5 @@
 from django import forms
-from alocar.models.bloco.models import Bloco
+from alocar.models.bloco import Bloco
 
 
 class AddBlocoForm(forms.ModelForm):

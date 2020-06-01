@@ -1,8 +1,8 @@
 from django.contrib import admin
-from alocar.models.bloco.models import Bloco
-from alocar.models.horario.models import Horario
-from alocar.models.sala.models import Sala
-from alocar.models.turma.models import Turma
+from alocar.models.bloco import Bloco
+from alocar.models.horario import Horario
+from alocar.models.sala import Sala
+from alocar.models.turma import Turma
 from import_export.admin import ImportExportModelAdmin
 
 
