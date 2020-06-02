@@ -79,6 +79,10 @@ def delHorario(request, id):
     return render(request, 'horario/delhorario.html', {"horario":horario})
 
 
+
+
+
+
 def permissao3(request):
     context = { }
     return render(request, 'alocar/permissao3.html', context)

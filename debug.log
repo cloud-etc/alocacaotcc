@@ -13322,3 +13322,645 @@ C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
 Watching for file changes with StatReloader
 C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\horario.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\bloco.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/css/mdb.min.css HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7319
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2559
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/assets/estilo.css HTTP/1.1" 304 0
+"GET /static/assets/custom.min.css HTTP/1.1" 304 0
+"GET /static/assets/style.css HTTP/1.1" 304 0
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /irpararelatorio/ HTTP/1.1" 200 5890
+"GET /relatorios/?filtrado= HTTP/1.1" 200 5566
+"GET /addsala/ HTTP/1.1" 200 12037
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/3/ HTTP/1.1" 200 3251
+"GET /delbloco/3/ HTTP/1.1" 200 3251
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\bloco.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /delbloco/3/ HTTP/1.1" 200 3251
+"GET /delbloco/3/ HTTP/1.1" 200 3251
+"GET /delbloco/1/ HTTP/1.1" 200 3251
+"GET /addhorario/ HTTP/1.1" 200 5882
+Internal Server Error: /delhorario/1/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "url'alocar:addHorario'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\horario.py", line 79, in delHorario
+    return render(request, 'horario/delhorario.html', {"horario":horario})
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'url'alocar:addHorario'', expected 'endblock'. Did you forget to register or load this tag?
+"GET /delhorario/1/ HTTP/1.1" 500 165078
+Internal Server Error: /delhorario/1/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "url'alocar:addhorario'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\horario.py", line 79, in delHorario
+    return render(request, 'horario/delhorario.html', {"horario":horario})
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'url'alocar:addhorario'', expected 'endblock'. Did you forget to register or load this tag?
+"GET /delhorario/1/ HTTP/1.1" 500 165217
+"GET /delhorario/1/ HTTP/1.1" 200 3349
+"GET /delhorario/1/ HTTP/1.1" 200 3366
+"POST /delhorario/1/ HTTP/1.1" 302 0
+"GET /addhorario/ HTTP/1.1" 200 6031
+"GET /delhorario/1/ HTTP/1.1" 200 3366
+"POST /delhorario/1/ HTTP/1.1" 302 0
+"GET /addhorario/ HTTP/1.1" 200 6031
+"GET /addhorario/ HTTP/1.1" 200 5882
+"GET /delhorario/1/ HTTP/1.1" 200 3353
+"GET /delhorario/1/ HTTP/1.1" 200 3358
+"GET /delhorario/1/ HTTP/1.1" 200 3360
+"GET /delhorario/1/ HTTP/1.1" 200 3360
+"GET /addhorario/ HTTP/1.1" 200 5882
+"GET /delhorario/1/ HTTP/1.1" 200 3354
+"GET /addhorario/ HTTP/1.1" 200 5882
+"GET /delhorario/1/ HTTP/1.1" 200 3354
+"GET /delhorario/1/ HTTP/1.1" 200 3354
+"GET /addsala/ HTTP/1.1" 200 12037
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/1/ HTTP/1.1" 200 3330
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/1/ HTTP/1.1" 200 3330
+"GET /delbloco/1/ HTTP/1.1" 200 3330
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /altbloco/3/ HTTP/1.1" 200 3749
+"POST /altbloco/3/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/1/ HTTP/1.1" 200 3329
+Watching for file changes with StatReloader
+"GET /delbloco/1/ HTTP/1.1" 200 3329
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/2/ HTTP/1.1" 200 3329
+"GET /delbloco/2/ HTTP/1.1" 200 3329
+"GET /addbloco/ HTTP/1.1" 200 6611
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\sala.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\bloco.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /delbloco/1/ HTTP/1.1" 200 3330
+"GET /delbloco/1/ HTTP/1.1" 200 3336
+"GET /delbloco/1/ HTTP/1.1" 200 3342
+"POST /delbloco/1/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6763
+"GET /altbloco/3/ HTTP/1.1" 200 3749
+"POST /altbloco/3/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /addbloco/ HTTP/1.1" 200 6611
+"GET /addsala/ HTTP/1.1" 200 12037
+"GET /delsala/2/ HTTP/1.1" 200 3267
+"GET /delsala/2/ HTTP/1.1" 200 3283
+"GET /delsala/2/ HTTP/1.1" 200 3287
+"GET /delsala/2/ HTTP/1.1" 200 3300
+"GET /delsala/2/ HTTP/1.1" 200 3304
+"GET /delsala/2/ HTTP/1.1" 200 3283
+"GET /delsala/2/ HTTP/1.1" 200 3361
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /altturma/4/ HTTP/1.1" 200 6990
+"POST /altturma/4/ HTTP/1.1" 302 0
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /delturma/4/ HTTP/1.1" 200 3231
+"GET /delturma/4/ HTTP/1.1" 200 3347
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\turma.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /delturma/4/ HTTP/1.1" 200 3351
+"GET /addturma/ HTTP/1.1" 200 23791
+Not Found: /listlog/
+"GET /listlog/ HTTP/1.1" 404 7310
+Internal Server Error: /listalog/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py", line 812, in listalog
+    return render(request, "alocar/listalog.html", context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delog' with arguments '('',)' not found. 1 pattern(s) tried: ['delog\\/(?P<id>[0-9]+)\\/$']
+"GET /listalog/ HTTP/1.1" 500 181915
+Internal Server Error: /listalog/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py", line 812, in listalog
+    return render(request, "alocar/listalog.html", context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delog' with arguments '('',)' not found. 1 pattern(s) tried: ['delog\\/(?P<id>[0-9]+)\\/$']
+"GET /listalog/ HTTP/1.1" 500 181915
+Internal Server Error: /listalog/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py", line 812, in listalog
+    return render(request, "alocar/listalog.html", context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delog' with arguments '('',)' not found. 1 pattern(s) tried: ['delog\\/(?P<id>[0-9]+)\\/$']
+"GET /listalog/ HTTP/1.1" 500 182050
+Internal Server Error: /listalog/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py", line 812, in listalog
+    return render(request, "alocar/listalog.html", context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delog' with arguments '('',)' not found. 1 pattern(s) tried: ['delog\\/(?P<id>[0-9]+)\\/$']
+"GET /listalog/ HTTP/1.1" 500 182050
+"GET /listalog/ HTTP/1.1" 200 7712
+"GET /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+"POST /delog/8/ HTTP/1.1" 200 3199
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /delog/8/ HTTP/1.1" 302 0
+"GET /addbloco/ HTTP/1.1" 200 6611
+Not Found: /delog/8/
+"POST /delog/8/ HTTP/1.1" 404 1735
+"GET /listalog/ HTTP/1.1" 200 7103
+"GET /delog/7/ HTTP/1.1" 200 2841
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /listalog/ HTTP/1.1" 200 7103
+"GET /delog/7/ HTTP/1.1" 200 3199
+"POST /delog/7/ HTTP/1.1" 302 0
+"GET /listalog/ HTTP/1.1" 200 6494
+"GET /delog/3/ HTTP/1.1" 200 3199
+"POST /delog/3/ HTTP/1.1" 302 0
+"GET /listalog/ HTTP/1.1" 200 5886
+"GET /listalog/ HTTP/1.1" 200 6211
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6211
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6206
+"GET /listalog/ HTTP/1.1" 200 6334
+"GET /admin/ HTTP/1.1" 200 6792
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 6792
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/alocar/turma/ HTTP/1.1" 200 13872
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 6792
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5417
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5815
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /listalog/ HTTP/1.1" 200 7035
+"GET /admin/ HTTP/1.1" 200 7075
+"GET /admin/ HTTP/1.1" 200 7075
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/ HTTP/1.1" 200 3378
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+"POST /admin/alocar/bloco/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5538
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /listalog/ HTTP/1.1" 200 7709
+"GET /listalog/ HTTP/1.1" 200 7108
+"GET /delog/1/ HTTP/1.1" 200 3199
+"POST /delog/1/ HTTP/1.1" 302 0
+"GET /listalog/ HTTP/1.1" 200 6499
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2202
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+Not Found: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 404 1908
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 404 1908
+Not Found: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 404 1908
+Watching for file changes with StatReloader
+Not Found: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 404 1908
+Not Found: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 404 1908
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: password_reset_confirm() got an unexpected keyword argument 'key'
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 500 68149
+Internal Server Error: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: password_reset_confirm() got an unexpected keyword argument 'key'
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 500 68149
+Internal Server Error: /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: password_reset_confirm() got an unexpected keyword argument 'key'
+"POST /usuarios/confirmar-nova-senha/0f85c5ac25b3993dbfce007a23fd2c0f67b9e407b39839a81a936c5b HTTP/1.1" 500 68149
+Watching for file changes with StatReloader
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_confirm' with no arguments not found. 1 pattern(s) tried: ['usuarios\\/confirmar\\-nova\\-senha\\/(?P<key>[^/]+)$']
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 159729
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /listalog/ HTTP/1.1" 200 6499
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2202
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
+"POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908
+Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
+"POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
+"POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908
+Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
+"POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
+"POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908

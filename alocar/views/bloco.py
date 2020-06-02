@@ -65,16 +65,20 @@ def delBloco(request, id):
     if not request.user.has_perm('alocar.delete_bloco'):
         return render(request, 'alocar/permissao2.html')
 
-
+    bloco = get_object_or_404(Bloco, pk=id)
     values = Sala.objects.select_related('bloco').filter(bloco__id=id)
     if request.method == 'POST':
         if values:
             messages.info(request, 'NÃO pode ser apagado, já faz parte de algum relacionamento')
         else:
-            bloco = get_object_or_404(Bloco, pk=id)
             bloco.delete()
         return redirect('alocar:addbloco')
-    return render(request, 'bloco/delbloco.html')
+
+    return render(request, 'bloco/delbloco.html', {"bloco":bloco})
+
+
+
+
 
 
 def permissao2(request):

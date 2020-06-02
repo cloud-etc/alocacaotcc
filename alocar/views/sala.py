@@ -100,17 +100,15 @@ def delSala(request, id):
     if not request.user.has_perm('alocar.delete_sala'):
         return render(request, 'alocar/permissao1.html')
 
-
+    sala = get_object_or_404(Sala, pk=id)
     values = Alocar.objects.select_related('sala').filter(sala__id=id)
-
     if request.method == 'POST':
         if values:
             messages.info(request, 'NÃO pode ser apagada, pois está alocada')
         else:
-            sala = get_object_or_404(Sala, pk=id)
             sala.delete()
         return redirect('alocar:addsala')
-    return render(request, 'sala/delsala.html')
+    return render(request, 'sala/delsala.html', {"sala":sala})
 
 
 

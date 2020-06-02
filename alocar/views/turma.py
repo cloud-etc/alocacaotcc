@@ -133,16 +133,15 @@ def delTurma(request, id):
     if not request.user.has_perm('alocar.delete_turma'):
         return render(request, 'alocar/permissao5.html')
 
+    turma = get_object_or_404(Turma, pk=id)
     values = Alocar.objects.select_related('turma').filter(turma__id=id)
-
     if request.method == 'POST':
         if values:
             messages.info(request, 'NÃO pode ser apagada, porque JÁ está alocada')
         else:
-            turma = get_object_or_404(Turma, pk=id)
             turma.delete()
         return redirect('alocar:addturma')
-    return render(request, 'turma/delturma.html')
+    return render(request, 'turma/delturma.html', {"turma":turma})
 
 
 def permissao5(request):
