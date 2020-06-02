@@ -5,7 +5,9 @@ from alocar.mail import send_mail_template
 from alocar.utils import generate_hash_key
 from .models import PasswordReset
 
+
 User = get_user_model()
+
 
 class UserAdminCreationForm(UserCreationForm):
 
@@ -14,11 +16,13 @@ class UserAdminCreationForm(UserCreationForm):
         fields = ['username', 'email']
 
 
+
 class UserAdminForm(forms.ModelForm):
 
     class Meta:
         model = User
         fields = ['username', 'email', 'name', 'is_active', 'is_staff']
+
 
 
 class PasswordResetForm(forms.Form):
@@ -33,12 +37,12 @@ class PasswordResetForm(forms.Form):
             'Nenhum usuário encontrado com esse RG'
         )
 
-    def save(self):
-        user = User.objects.get(nrg=self.cleaned_data['nrg'])
-        key = generate_hash_key(user.username)
-        reset = PasswordReset(key=key, user=user)
-        reset.save()
-        return reset
+    # def save(self):
+    #     user = User.objects.get(nrg=self.cleaned_data['nrg'])
+    #     key = generate_hash_key(user.username)
+    #     reset = PasswordReset(key=key, user=user)
+    #     reset.save()
+    #     return reset
 
 class RegisterForm(forms.ModelForm):
     password1 = forms.CharField(label='Senha', widget=forms.PasswordInput)
@@ -63,6 +67,9 @@ class RegisterForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username', 'email']
+
+
+
 
 class EditAccountForm(forms.ModelForm):
 

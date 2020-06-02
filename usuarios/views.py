@@ -42,12 +42,11 @@ def password_reset(request):
     context = {}
     form = PasswordResetForm(request.POST or None)
     if form.is_valid():
-        user = User.objects.get(nrg=form.cleaned_data['nrg'])
-        key = generate_hash_key(user.username)
-        form = PasswordReset(key=key, user=user)
         form.save()
         context['success'] = True
-        context['form'] = form
+        return redirect('usuarios:password_reset_confirm')
+    context['form'] = form
+    context['key'] = generate_hash_key(request.user.username) # adicionas esta linha para adicionar ao context
     return render(request, template_name, context)
 
 

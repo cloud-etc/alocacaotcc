@@ -40,10 +40,13 @@
         <div class="jumbotron text-center primary-color lighten-2 white-text mx-2 mb-5">
 
             <!-- Title -->
-            <h2 class="card-title h2">ATENÇÃO</h2>
-
-            <!-- Subtitle -->
-            <p class="card-title">Você NÃO tem permissão para executar essa operação</p>
+            <div class="container margin-top">
+        <h3>Página não encontrada</h3>
+        <hr>
+        {{ request_path }}
+        <hr>
+        {{ exception }}
+	</div>
 
 
         </div>

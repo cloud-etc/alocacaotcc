@@ -30,13 +30,7 @@ INSTALLED_APPS = [
     'usuarios',
     'bootstrap4',
     'stdimage',
-    # 'models_logging',
 ]
-
-LOGGING_MODELS = (
-    'usuarios',    # logging only for this model
-    'alocar',     # logging of all models in this app
-)
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
