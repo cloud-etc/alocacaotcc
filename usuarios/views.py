@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import RegisterForm, EditAccountForm, PasswordResetForm
-from django.contrib.auth.forms import (PasswordChangeForm, SetPasswordForm)
+from django.contrib.auth.forms import PasswordChangeForm, SetPasswordForm
 from django.contrib.auth import authenticate, login, get_user_model
 from django.contrib.auth.decorators import login_required
 from alocar.utils import generate_hash_key
+from .forms import *
 from .models import PasswordReset
 from django.contrib import messages
 
@@ -33,34 +33,46 @@ def register(request):
     }
     return render(request, template_name, context)
 
+
 # '''
 # funcao para alterar senha na tela de login,
 # com o usuario fora do sistema sem logar
 # '''
 def password_reset(request):
     template_name = 'usuarios/password_reset.html'
-    context = {}
-    form = PasswordResetForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        context['success'] = True
-        return redirect('usuarios:password_reset_confirm')
-    context['form'] = form
-    context['key'] = generate_hash_key(request.user.username) # adicionas esta linha para adicionar ao context
-    return render(request, template_name, context)
+    if request.method == 'POST':
+        form = PasswordResetForm(request.POST or None)
+        if form.is_valid():
+            user = form.save()
+            return redirect('usuarios:password_reset_confirm', key=user.key)
+    else:
+        form = PasswordResetForm()
+    return render(request, template_name, { 'form': form })
 
 
+# '''
+# funcao para resetar senha
+# com o usuario fora do sistema sem logar
+# '''
 def password_reset_confirm(request, key):
     template_name = 'usuarios/password_reset_confirm.html'
     context = {}
-    reset = get_object_or_404(PasswordReset, key=key)
-    form = SetPasswordForm(user=reset.user, data=request.POST or None)
-    if form.is_valid():
-        form.save()
-        context['success'] = True
-        return redirect('usuarios:login')
-    context['form'] = form
+    reset = PasswordReset.objects.get(key=key)
+    if request.method == 'POST':
+        form = SetPasswordForm(user=reset.user, data=request.POST or None)
+        if form.is_valid():
+            form.save()
+            reset.confirmed = True
+            reset.save()
+            context['success'] = True
+            return redirect('usuarios:login')
+    else:
+        context['form'] = SetPasswordForm(user=reset.user)
+        context['key'] = reset.key
     return render(request, template_name, context)
+
+
+
 
 # funcao para alterar dados
 # da conta do usuario logado
@@ -96,11 +108,6 @@ def edit_password(request):
         form = PasswordChangeForm(user = request.user)
     context['form'] = form
     return render(request, template_name, context)
-
-
-
-
-
 
 
 

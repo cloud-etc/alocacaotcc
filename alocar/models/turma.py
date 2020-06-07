@@ -24,6 +24,7 @@ class Turma(models.Model):
     def nao_alocada(self):
         self.alocada = False
         self.save()
+
     class Meta:
         verbose_name= "Turma"
         verbose_name_plural = "Turmas"

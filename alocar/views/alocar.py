@@ -1,4 +1,3 @@
-import datetime
 from django.contrib.admin.models import LogEntry
 from django.core.paginator import Paginator
 from django.http import HttpResponse
@@ -13,13 +12,8 @@ from alocar.models.alocar import Alocar
 from alocar.models.sala import Sala
 from alocar.models.turma import Turma
 
-import logging
-
-logger = logging.getLogger('django')
-
-
 """
-funcao que da acessoa pagin a principal do sistema
+funcao que da acessoa pagina principal do sistema
 e ao dashboard
 """
 def home(request):
@@ -44,7 +38,6 @@ def listSalaTurma(request, *args, **kwargs):
                     Turma.objects.filter(disciplina__icontains=varios) | \
                     Turma.objects.filter(professor__icontains=varios)
     else:
-        # turmapage = Turma.objects.all()
         turmapage = Turma.objects.filter(alocada=False)
 
 
@@ -58,7 +51,6 @@ def listSalaTurma(request, *args, **kwargs):
 
             disponivel=True
         )
-        
 
     alocar = Alocar.objects.all()
 
@@ -169,7 +161,6 @@ def listAlocacao(request):
     """
     pesquisa no banco dados
     """
-    logger.info('Acessaram a listagem de alocação')
     varios = request.GET.get('varios', None)
     context = {}
     if varios:

@@ -13964,3 +13964,519 @@ C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
 Watching for file changes with StatReloader
 Not Found: /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04
 "POST /usuarios/confirmar-nova-senha/0f49756e0259ddce93394023bd7c9aded997eefbef7b88ac42fadc04 HTTP/1.1" 404 1908
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /usuarios/sair/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2559
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /usuarios/entrar/ HTTP/1.1" 200 2559
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/ HTTP/1.1" 302 0
+"GET /usuarios/ HTTP/1.1" 200 2692
+"GET /addturma/ HTTP/1.1" 200 23791
+"GET /addsala/ HTTP/1.1" 200 12037
+"GET /addbloco/ HTTP/1.1" 200 6611
+"POST /addbloco/ HTTP/1.1" 200 6695
+"POST /addbloco/ HTTP/1.1" 200 7334
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /detalhealocacao/4/ HTTP/1.1" 200 3787
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /altsala/1/ HTTP/1.1" 200 6375
+"POST /altsala/1/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 12211
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 6501
+"GET /delalocacao/4/ HTTP/1.1" 200 3199
+"POST /delalocacao/4/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 5386
+"GET /delalocacao/3/ HTTP/1.1" 200 3199
+"POST /delalocacao/3/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4280
+"GET /addsala/ HTTP/1.1" 200 12075
+"GET /altsala/1/ HTTP/1.1" 200 6375
+"POST /altsala/1/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 12081
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4280
+"GET /listsalaturma/ HTTP/1.1" 200 21812
+"POST /listsalaturma/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 4381
+"GET /listsalaturma/ HTTP/1.1" 200 21812
+"POST /listsalaturma/ HTTP/1.1" 302 0
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 5386
+"GET /detalhealocacao/5/ HTTP/1.1" 200 3787
+Acessaram a listagem de alocação
+"GET /listalocacao/ HTTP/1.1" 200 5386
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocar.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /listalocacao/ HTTP/1.1" 200 5386
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_confirm' with arguments '('',)' not found. 1 pattern(s) tried: ['usuarios\\/confirmar\\-nova\\-senha\\/(?P<key>[^/]+)$']
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 159315
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_confirm' with arguments '('',)' not found. 1 pattern(s) tried: ['usuarios\\/confirmar\\-nova\\-senha\\/(?P<key>[^/]+)$']
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 159450
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_confirm' with arguments '('',)' not found. 1 pattern(s) tried: ['usuarios\\/confirmar\\-nova\\-senha\\/(?P<key>[^/]+)$']
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 159450
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_email' not found. 'password_reset_email' is not a valid view function or pattern name.
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 156360
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2303
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 1648
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/confirmar-nova-senha/02acde8e2d1b7889132399c6751a577b109f0649b97e5e1558f7d501 HTTP/1.1" 200 2650
+"GET /static/assets/style.css HTTP/1.1" 200 1292
+"GET /static/css/style.css HTTP/1.1" 200 1099
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 200 127381
+"GET /static/assets/estilo.css HTTP/1.1" 200 852
+"GET /static/assets/custom.min.css HTTP/1.1" 200 2531
+"GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+"GET /static/css/mdb.min.css HTTP/1.1" 200 275868
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 7319
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/confirmar-nova-senha/02acde8e2d1b7889132399c6751a577b109f0649b97e5e1558f7d501 HTTP/1.1" 302 0
+"GET /usuarios/entrar/ HTTP/1.1" 200 2559
+"GET /static/assets/estilo.css HTTP/1.1" 200 852
+"GET /static/assets/style.css HTTP/1.1" 200 1292
+"GET /static/assets/custom.min.css HTTP/1.1" 200 2531
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 200 127381
+"GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+"GET /static/css/style.css HTTP/1.1" 200 1099
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/ HTTP/1.1" 200 2781
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/ HTTP/1.1" 302 0
+"GET /usuarios/ HTTP/1.1" 200 2692
+"GET /usuarios/editar-senha/ HTTP/1.1" 200 4288
+"POST /usuarios/editar-senha/ HTTP/1.1" 200 4423
+"POST /usuarios/editar-senha/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2650
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 5386
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2303
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2303
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 1648
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2303
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2407
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2407
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2303
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_email' not found. 'password_reset_email' is not a valid view function or pattern name.
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 156368
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2559
+Internal Server Error: /usuarios/nova-senha/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 50, in password_reset
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\urls\resolvers.py", line 673, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'password_reset_email' not found. 'password_reset_email' is not a valid view function or pattern name.
+"GET /usuarios/nova-senha/ HTTP/1.1" 500 156018
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2110
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2262
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2135
+"GET /usuarios/confirmar-nova-senha/ce35403f59b82981413547999836b988d69025246563f6967f9566df HTTP/1.1" 200 2765
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/confirmar-nova-senha/ce35403f59b82981413547999836b988d69025246563f6967f9566df HTTP/1.1" 302 0
+"GET /usuarios/entrar/ HTTP/1.1" 200 2559
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/ HTTP/1.1" 302 0
+"GET /usuarios/ HTTP/1.1" 200 2692
+"GET /usuarios/editar-senha/ HTTP/1.1" 200 4288
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 1647
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2130
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2284
+"GET /usuarios/sair/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /usuarios/confirmar-nova-senha/de2e24dd668185a872fbb19dff17eb5923e0f057849af894f02b1eda HTTP/1.1" 200 2765
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/css/mdb.min.css HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2559
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/assets/custom.min.css HTTP/1.1" 304 0
+"GET /static/assets/estilo.css HTTP/1.1" 304 0
+"GET /static/assets/style.css HTTP/1.1" 304 0
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2544
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2127
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2263
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/d3a4e05f81b3175641cb0e2176af8c6bb42bbc85aeaf412828ef6507 HTTP/1.1" 200 2765
+"POST /usuarios/confirmar-nova-senha/d3a4e05f81b3175641cb0e2176af8c6bb42bbc85aeaf412828ef6507 HTTP/1.1" 302 0
+"GET /usuarios/entrar/ HTTP/1.1" 200 2544
+"POST /usuarios/entrar/ HTTP/1.1" 200 2766
+"POST /usuarios/entrar/ HTTP/1.1" 302 0
+Internal Server Error: /usuarios/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 16, in index
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: usuarios/dashboard.html
+"GET /usuarios/ HTTP/1.1" 500 92402
+C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /usuarios/ HTTP/1.1" 200 2692
+"GET /usuarios/editar-senha/ HTTP/1.1" 200 4288
+"POST /usuarios/editar-senha/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2631
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 5386
+"GET /addturma/ HTTP/1.1" 200 23793
+"GET /listalocacao/ HTTP/1.1" 200 5386
+"GET /listsalaturma/ HTTP/1.1" 200 20245
+"POST /listsalaturma/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 5487
+"GET /detalhealocacao/5/ HTTP/1.1" 200 3787
+"GET /listsalaturma/ HTTP/1.1" 200 20245
+"POST /listsalaturma/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 6499
+"GET /irpararelatorio/ HTTP/1.1" 200 5888
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\turma.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\turma.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /usuarios/sair/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /usuarios/entrar/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2127
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/3aaa75f04260cb21f501680905b74803f0ef13a618584f559d62c60e HTTP/1.1" 200 2765
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2127
+"POST /usuarios/nova-senha/ HTTP/1.1" 200 2263
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/2d6a26f3f7fe4e9a732b14e893a247782729d5ae50e43cafa73a51e6 HTTP/1.1" 200 2765

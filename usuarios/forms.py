@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
-from alocar.mail import send_mail_template
+# from core.mail import send_mail_template
 from alocar.utils import generate_hash_key
 from .models import PasswordReset
 
@@ -37,12 +37,12 @@ class PasswordResetForm(forms.Form):
             'Nenhum usuário encontrado com esse RG'
         )
 
-    # def save(self):
-    #     user = User.objects.get(nrg=self.cleaned_data['nrg'])
-    #     key = generate_hash_key(user.username)
-    #     reset = PasswordReset(key=key, user=user)
-    #     reset.save()
-    #     return reset
+    def save(self):
+         user = User.objects.get(nrg=self.cleaned_data['nrg'])
+         key = generate_hash_key(user.username)
+         reset = PasswordReset(key=key, user=user)
+         reset.save()
+         return reset
 
 class RegisterForm(forms.ModelForm):
     password1 = forms.CharField(label='Senha', widget=forms.PasswordInput)
@@ -76,13 +76,6 @@ class EditAccountForm(forms.ModelForm):
      class Meta:
         model = User
         fields = ['username', 'email', 'name']
-
-
-
-
-
-
-
 
 
 

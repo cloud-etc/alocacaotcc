@@ -60,18 +60,6 @@ def addTurma(request):
     form = AddTurmaForm(request.POST or None)
 
     if form.is_valid():
-        # turma = form.cleaned_data['turma']
-        # curso = form.cleaned_data['curso']
-        # professor = form.cleaned_data['professor']
-        # disciplina = form.cleaned_data['disciplina']
-        #
-        # query = Turma.objects.filter(professor=professor) & \
-        #         Turma.objects.filter(disciplina=disciplina)
-        #
-        # if query:
-        #     messages.info(request, 'Essa disciplina já está cadastrada')
-        #     return redirect('alocar:addturma')
-        # else:
         form.save()
         form = AddTurmaForm()
 
@@ -83,7 +71,6 @@ def addTurma(request):
     turmapage = paginator.get_page(page)  
 
     context['form'] = form
-    # context['turmas'] = turmas
     context['turmapage'] = turmapage
     return render(request, template_name, context)
 
