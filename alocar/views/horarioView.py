@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from alocar.forms.horario import AddHorarioForm
-from alocar.models.alocar import Alocar, Horario
+from alocar.forms.horarioForm import AddHorarioForm
+from alocar.models.alocarModel import Alocar, Horario
 
 """
 funcao para cadastrar horario
@@ -82,8 +82,4 @@ def delHorario(request, id):
 
 
 
-
-def permissao3(request):
-    context = { }
-    return render(request, 'alocar/permissao3.html', context)
 

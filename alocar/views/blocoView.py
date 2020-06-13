@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from alocar.forms.bloco import AddBlocoForm
-from alocar.models.sala import Sala
-from alocar.models.bloco import Bloco
+from alocar.forms.blocoForm import AddBlocoForm
+from alocar.models.salaModel import Sala
+from alocar.models.blocoModel import Bloco
 """
 funcao para cadastrar bloco
 """
@@ -13,7 +13,7 @@ def addBloco(request):
     verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.add_bloco'):
-        return render(request, 'alocar/permissao2.html')
+        return render(request, 'alocar/permissao1.html')
 
 
     blocos = Bloco.objects.all().order_by('bloco')
@@ -39,7 +39,7 @@ def altBloco(request, id):
      verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.change_bloco'):
-        return render(request, 'alocar/permissao2.html')
+        return render(request, 'alocar/permissao1.html')
 
     bloco = get_object_or_404(Bloco, pk=id)
     form = AddBlocoForm(request.POST or None, request.FILES or None, instance=bloco)
@@ -63,7 +63,7 @@ def delBloco(request, id):
         verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.delete_bloco'):
-        return render(request, 'alocar/permissao2.html')
+        return render(request, 'alocar/permissao1.html')
 
     bloco = get_object_or_404(Bloco, pk=id)
     values = Sala.objects.select_related('bloco').filter(bloco__id=id)
@@ -76,11 +76,3 @@ def delBloco(request, id):
 
     return render(request, 'bloco/delbloco.html', {"bloco":bloco})
 
-
-
-
-
-
-def permissao2(request):
-    context = { }
-    return render(request, 'alocar/permissao2.html', context)

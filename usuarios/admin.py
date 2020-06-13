@@ -34,5 +34,7 @@ class UserAdmin(BaseUserAdmin):
     list_display = ['username', 'is_active', 'is_staff', 'date_joined']
 
 
+
+
 admin.site.register(User, UserAdmin)
 

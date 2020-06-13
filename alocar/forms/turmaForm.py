@@ -1,5 +1,5 @@
 from django import forms
-from alocar.models.turma import Turma
+from alocar.models.turmaModel import Turma
 
 
 class AddTurmaForm(forms.ModelForm):

@@ -1,9 +1,9 @@
 from django.conf import settings
 from django.db import models
 from django.urls import reverse
-from alocar.models.horario import Horario
-from alocar.models.turma import Turma
-from alocar.models.sala import Sala
+from alocar.models.horarioModel import Horario
+from alocar.models.turmaModel import Turma
+from alocar.models.salaModel import Sala
 
 
 
@@ -35,7 +35,7 @@ class Alocar(models.Model):
 
 
     def get_absolute_url(self):
-        return reverse('alocar:listalocacao')
+        return reverse('alocar:listsalaturma')
 
     
     def maior(self):

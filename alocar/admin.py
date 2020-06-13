@@ -1,8 +1,8 @@
 from django.contrib import admin
-from alocar.models.bloco import Bloco
-from alocar.models.horario import Horario
-from alocar.models.sala import Sala
-from alocar.models.turma import Turma
+from alocar.models.blocoModel import Bloco
+from alocar.models.horarioModel import Horario
+from alocar.models.salaModel import Sala
+from alocar.models.turmaModel import Turma
 from import_export.admin import ImportExportModelAdmin
 
 
@@ -11,7 +11,7 @@ class TurmaAdmin(ImportExportModelAdmin):
     list_display = ('turma','curso','periodo','disciplina','alocada','professor','qtdalunos','internet','projetor','computador')
     search_fields = ('turma','curso','professor','disciplina')
     list_filter = ('curso','periodo','professor','disciplina')
-
+    readonly_fields = ('alocada',)
 
 @admin.register(Horario)
 class HorarioAdmin(admin.ModelAdmin):

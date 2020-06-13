@@ -9,7 +9,13 @@
         <div class="col-sm-2">
             <div class="list-group">
                 <a href="" class=""></a>
+
+                {% if user.is_superuser %}
                 <a href="{% url 'usuarios:edit_password' %}" class="list-group-item">Alterar Senha</a>
+                <a href="{% url 'alocar:listalog' %}" class="list-group-item">Lista de Logs</a>
+                {% else %}
+                <a href="{% url 'usuarios:edit_password' %}" class="list-group-item">Alterar Senha</a>
+                {% endif %}
 
             </div>
         </div>

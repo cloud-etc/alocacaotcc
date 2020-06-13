@@ -6,10 +6,13 @@ from dj_database_url import parse as dburl
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 SECRET_KEY = config('SECRET_KEY')
 
+#modo de debugação
 DEBUG = config('DEBUG', default=False, cast=bool)
 
+# permissao de dominio
 ALLOWED_HOSTS = ['*']
 
 
@@ -17,12 +20,14 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    #aplicacoes padrao do sistema
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #aplicações do usuario
     'import_export',
     'crispy_forms',
     'widget_tweaks',
@@ -32,7 +37,7 @@ INSTALLED_APPS = [
     'stdimage',
 ]
 
-
+#renderizar form no template
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
@@ -43,11 +48,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
 ]
 
 ROOT_URLCONF = 'alocacao.urls'
 
+
+#reponsavel pela localização dos templates e renserização
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -64,6 +70,7 @@ TEMPLATES = [
     },
 ]
 
+# conecta o projeto ao middlware wsgi.py
 WSGI_APPLICATION = 'alocacao.wsgi.application'
 
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
@@ -122,15 +129,8 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#EMAIL
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'ocrsha@gmail.com'
-EMAIL_HOST_PASSWORD = 'Eaa.2035'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
+#URLS de direcionamento
 LOGIN_URL = 'usuarios:login'
 LOGIN_REDIRECT_URL = 'usuarios:index'
 LOGOUT_URL = 'usuarios:logout'

@@ -1,5 +1,5 @@
 from django.db import models
-from alocar.models.bloco import Bloco
+from alocar.models.blocoModel import Bloco
 
 
 class Sala(models.Model):

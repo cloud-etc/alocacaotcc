@@ -1,11 +1,11 @@
 from django.urls import path
-from alocar.views.alocar import listAlocacao, listSalaTurma, \
-    altAlocacao, delAlocacao, home, permissao1, export_alocacoes, \
+from alocar.views.alocarView import listAlocacao, listSalaTurma, \
+    delAlocacao, home, permissao1, \
     relatorios, telapararelatorio, detalhealocacao, listalog, delog
-from alocar.views.bloco import addBloco, altBloco, delBloco, permissao2
-from alocar.views.horario import addHorario, altHorario, delHorario, permissao3
-from alocar.views.sala import addSala, altSala, delSala, permissao4
-from alocar.views.turma import addTurma, altTurma, delTurma, permissao5
+from alocar.views.blocoView import addBloco, altBloco, delBloco
+from alocar.views.horarioView import addHorario, altHorario, delHorario
+from alocar.views.salaView import addSala, altSala, delSala
+from alocar.views.turmaView import addTurma, altTurma, delTurma
 
 app_name='alocar'
 
@@ -14,7 +14,6 @@ urlpatterns = [
     # urls das views alocacao
     path('listsalaturma/', listSalaTurma, name='listsalaturma'),
     path('listalocacao/', listAlocacao, name='listalocacao'),
-    path('altalocacao/<int:id>/', altAlocacao, name='altalocacao'),
     path('delalocacao/<int:id>/', delAlocacao, name='delalocacao'),
     path('detalhealocacao/<int:id>/', detalhealocacao, name='detalhealocacao'),
     # urls das views turma
@@ -34,15 +33,10 @@ urlpatterns = [
     path('althorario/<int:id>/', altHorario, name='althorario'),
     path('delhorario/<int:id>/', delHorario, name='delhorario'),
     #  urls da view para exportar relatorio excel
-    path('todasrelatorios', export_alocacoes, name='export_alocacoes'),
     path('relatorios/', relatorios, name='relatorios'),
     path('irpararelatorio/', telapararelatorio, name='telapararelatorio'),
     # informa sobre a negacao de permissao
     path('permissao1/', permissao1, name='permissao1'),
-    path('permissao2/', permissao2, name='permissao2'),
-    path('permissao3/', permissao3, name='permissao3'),
-    path('permissao4/', permissao4, name='permissao4'),
-    path('permissao5/', permissao5, name='permissao5'),
     path('listalog/', listalog, name='listalog'),
     path('delog/<int:id>/', delog, name='delog'),
 ]

@@ -1,5 +1,5 @@
 from django import forms
-from alocar.models.sala import Sala
+from alocar.models.salaModel import Sala
 
 
 class AddSalaForm(forms.ModelForm):

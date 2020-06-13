@@ -3,9 +3,9 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from alocar.forms.turma import AddTurmaForm
-from alocar.models.alocar import Alocar
-from alocar.models.turma import Turma
+from alocar.forms.turmaForm import AddTurmaForm
+from alocar.models.alocarModel import Alocar
+from alocar.models.turmaModel import Turma
 
 import logging
 
@@ -37,7 +37,7 @@ def addTurma(request):
     verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.add_turma'):
-        return render(request, 'alocar/permissao5.html')
+        return render(request, 'alocar/permissao1.html')
 
     """
     pesquisa no banco dados
@@ -87,7 +87,7 @@ def altTurma(request, id):
         verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.change_turma'):
-        return render(request, 'alocar/permissao5.html')
+        return render(request, 'alocar/permissao1.html')
 
     turma = get_object_or_404(Turma, pk=id)
     form = AddTurmaForm(request.POST or None, request.FILES or None, instance=turma)
@@ -118,7 +118,7 @@ def delTurma(request, id):
      verifica se o usuario tem perimissao, para fazer a operacao
     """
     if not request.user.has_perm('alocar.delete_turma'):
-        return render(request, 'alocar/permissao5.html')
+        return render(request, 'alocar/permissao1.html')
 
     turma = get_object_or_404(Turma, pk=id)
     values = Alocar.objects.select_related('turma').filter(turma__id=id)
@@ -133,4 +133,4 @@ def delTurma(request, id):
 
 def permissao5(request):
     context = { }
-    return render(request, 'alocar/permissao5.html', context)
+    return render(request, 'alocar/permissao1.html', context)

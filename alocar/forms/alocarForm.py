@@ -1,10 +1,8 @@
 from django import forms
-from alocar.models.alocar import Alocar
+from alocar.models.alocarModel import Alocar
 
 
 class AddAlocForm(forms.ModelForm):
-    # turma = forms.ModelChoiceField(queryset=Turma.objects.filter(alocada=False))
-
     class Meta:
         model = Alocar
         fields = ('turma','sala','dia','horario')
