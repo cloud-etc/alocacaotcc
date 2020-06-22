@@ -1,4 +1,7 @@
-from django.contrib import admin
+from django.contrib import admin, messages
+from django.shortcuts import redirect
+
+from alocar.models.alocarModel import Alocar
 from alocar.models.blocoModel import Bloco
 from alocar.models.horarioModel import Horario
 from alocar.models.salaModel import Sala
@@ -12,12 +15,28 @@ class TurmaAdmin(ImportExportModelAdmin):
     search_fields = ('turma','curso','professor','disciplina')
     list_filter = ('curso','periodo','professor','disciplina')
     readonly_fields = ('alocada',)
+    actions = ['delete_selected']
+
+    def save_model(self, request, obj, form, change):
+        values = Alocar.objects.select_related('turma').filter(turma__id=obj.id)
+        if values:
+            messages.info(request, 'NÃO pode ser alterada, já faz parte de algum relacionamento')
+        else:
+            obj.save()
 
 @admin.register(Horario)
 class HorarioAdmin(admin.ModelAdmin):
     list_display = ('horario',)
     search_fields = ('horario',)
     list_filter = ('horario',)
+
+    def save_model(self, request, obj, form, change):
+        values = Alocar.objects.select_related('horario').filter(horario__id=obj.id)
+        if values:
+            messages.info(request, 'NÃO pode ser alterada, já faz parte de algum relacionamento')
+        else:
+            obj.save()
+
 
 
 @admin.register(Sala)
@@ -28,16 +47,13 @@ class SalaAdmin(admin.ModelAdmin):
     ordering = ('sala',)
     autocomplete_fields = ['bloco']
 
+    def save_model(self, request, obj, form, change):
+        values = Alocar.objects.select_related('sala').filter(sala__id=obj.id)
+        if values:
+            messages.info(request, 'NÃO pode ser alterada, já faz parte de algum relacionamento')
+        else:
+            obj.save()
 
-    # def delete_model(self, request, obj):
-    #     values = Alocar.objects.select_related('sala').filter(sala__id=id)
-
-    #     if request.method == 'POST':
-    #         if values:
-    #             messages.info(request, 'NÃO pode ser excluida, pois está alocada')
-    #         else:
-    #             obj = get_object_or_404(Sala, pk=id)
-    #             obj.delete()
 
     
 
@@ -48,7 +64,14 @@ class BlocoAdmin(admin.ModelAdmin):
     ordering = ('bloco',)
 
 
+    def save_model(self, request, obj, form, change):
+        values = Sala.objects.select_related('bloco').filter(bloco__id=obj.id)
+        if values:
+            messages.success(request, 'NÃO pode ser alterado, já faz parte de algum relacionamento')
+        else:
+            obj.save()
 
+admin.site.disable_action('delete_selected')
 
 
 

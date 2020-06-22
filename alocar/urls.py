@@ -40,3 +40,4 @@ urlpatterns = [
     path('listalog/', listalog, name='listalog'),
     path('delog/<int:id>/', delog, name='delog'),
 ]
+

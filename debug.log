@@ -1286,3 +1286,1267 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'crispy'
 "GET /static/images/bg.jpg HTTP/1.1" 404 1663
 "POST /usuarios/nova-senha/ HTTP/1.1" 302 0
 "GET /usuarios/confirmar-nova-senha/9bb654b7fe96fb9dc00b8417ad5256251751fc476a1b2df704a50c16 HTTP/1.1" 200 1904
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/css/mdb.min.css HTTP/1.1" 304 0
+"GET /static/css/style.css HTTP/1.1" 304 0
+"GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6230
+"GET /usuarios/entrar/ HTTP/1.1" 200 2540
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/assets/custom.min.css HTTP/1.1" 304 0
+"GET /static/assets/estilo.css HTTP/1.1" 304 0
+"GET /static/assets/style.css HTTP/1.1" 304 0
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2123
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/34c6aef6880ceae7c9bb8501ec733db66dfa3136a193386f8271a5b7 HTTP/1.1" 200 1904
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /usuarios/confirmar-nova-senha/34c6aef6880ceae7c9bb8501ec733db66dfa3136a193386f8271a5b7 HTTP/1.1" 200 1919
+"GET /usuarios/confirmar-nova-senha/34c6aef6880ceae7c9bb8501ec733db66dfa3136a193386f8271a5b7 HTTP/1.1" 200 1939
+"GET /usuarios/confirmar-nova-senha/34c6aef6880ceae7c9bb8501ec733db66dfa3136a193386f8271a5b7 HTTP/1.1" 200 1909
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2123
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /usuarios/entrar/ HTTP/1.1" 200 2540
+"POST /usuarios/entrar/ HTTP/1.1" 302 0
+"GET /usuarios/ HTTP/1.1" 200 2806
+"GET /admin/ HTTP/1.1" 200 8179
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 8179
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/alocar/bloco/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 45, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=id)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 500 161086
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 47, in save_model
+    if values:
+NameError: name 'values' is not defined
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 500 116381
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5915
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4359
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 200 4185
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/alocar/bloco/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 45, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=id)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 500 161086
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 45, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=request.id)
+AttributeError: 'WSGIRequest' object has no attribute 'id'
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 500 116601
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/1/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 45, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco=request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'WSGIRequest'
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 500 162315
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5915
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5915
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5915
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/6/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/6/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5924
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5928
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /listalocacao/ HTTP/1.1" 200 6502
+"GET /addsala/ HTTP/1.1" 200 11505
+"GET /addbloco/ HTTP/1.1" 200 6758
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco=request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'WSGIRequest'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 161270
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=request.id)
+AttributeError: 'WSGIRequest' object has no attribute 'id'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115606
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=request.bloco)
+AttributeError: 'WSGIRequest' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115624
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115610
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115622
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'BlocoForm'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 160283
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.id)
+AttributeError: 'BlocoForm' object has no attribute 'id'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115592
+C:\Users\shaba\PycharmProjects\alocacao\alocar\forms\blocoForm.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.id)
+AttributeError: 'BlocoForm' object has no attribute 'id'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115592
+C:\Users\shaba\PycharmProjects\alocacao\alocar\forms\blocoForm.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115610
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+Internal Server Error: /admin/alocar/bloco/add/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1634, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 500 115610
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/alocar/turma/ HTTP/1.1" 200 13955
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7569
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/sala/1/change/ HTTP/1.1" 200 8496
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /static/admin/js/autocomplete.js HTTP/1.1" 200 1124
+"GET /static/admin/css/vendor/select2/select2.css HTTP/1.1" 200 17604
+"GET /static/admin/css/autocomplete.css HTTP/1.1" 200 8440
+"GET /static/admin/js/vendor/select2/i18n/pt-BR.js HTTP/1.1" 200 853
+"GET /static/admin/js/vendor/select2/select2.full.js HTTP/1.1" 200 161832
+"GET /admin/alocar/sala/1/delete/ HTTP/1.1" 200 3218
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+"GET /admin/ HTTP/1.1" 200 8257
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /listalocacao/ HTTP/1.1" 200 6502
+"GET /detalhealocacao/6/ HTTP/1.1" 200 3786
+"GET /listalocacao/ HTTP/1.1" 200 6502
+"GET /usuarios/ HTTP/1.1" 200 2806
+"GET /listalog/ HTTP/1.1" 200 13751
+"GET /delog/2/ HTTP/1.1" 200 2623
+"POST /delog/2/ HTTP/1.1" 302 0
+"GET /listalog/ HTTP/1.1" 200 13148
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 116353
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco_bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco_bloco'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 116389
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco__bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco__bloco'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 116395
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=form.bloco.bloco)
+AttributeError: 'BlocoForm' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 116365
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=self.bloco)
+AttributeError: 'BlocoAdmin' object has no attribute 'bloco'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 116357
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/alocar/bloco/2/change/
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 606, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1637, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\contrib\admin\options.py", line 1561, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py", line 44, in save_model
+    values = Sala.objects.select_related('bloco').filter(bloco__id=obj.bloco)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\db\models\fields\__init__.py", line 968, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'BLOCO B'
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 500 160524
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5813
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/6/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5915
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6028
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/6/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/6/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6028
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6030
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6132
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4258
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6028
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8263
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7569
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8263
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5849
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6131
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6030
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/3/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/3/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6031
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6133
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4258
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6029
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/3/change/ HTTP/1.1" 200 4258
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/3/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6028
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8255
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7569
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/sala/1/change/ HTTP/1.1" 200 8496
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7743
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/sala/1/change/ HTTP/1.1" 200 8504
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7743
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/sala/2/change/ HTTP/1.1" 200 8504
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7743
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8238
+"GET /admin/alocar/horario/ HTTP/1.1" 200 5650
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 5941
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/horario/2/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 5941
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/horario/ HTTP/1.1" 200 5650
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8257
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7569
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/sala/2/change/ HTTP/1.1" 200 8512
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7846
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/sala/ HTTP/1.1" 200 7569
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8251
+"GET /admin/alocar/turma/ HTTP/1.1" 200 13955
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/turma/6/change/ HTTP/1.1" 200 8425
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/turma/6/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/turma/ HTTP/1.1" 200 14235
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/turma/add/ HTTP/1.1" 200 8139
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/turma/add/ HTTP/1.1" 200 8640
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/turma/add/ HTTP/1.1" 200 8139
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8248
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5849
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6132
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6030
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6135
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6133
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5850
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/2/change/ HTTP/1.1" 200 4258
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6028
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 6135
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/ HTTP/1.1" 200 3376
+"POST /admin/alocar/bloco/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5755
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/ HTTP/1.1" 200 2894
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5634
+"POST /admin/alocar/bloco/ HTTP/1.1" 200 3647
+"POST /admin/alocar/bloco/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5104
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 4982
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5381
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/add/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5598
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/1/change/ HTTP/1.1" 200 4256
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/bloco/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 5703
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 4295
+"GET /admin/ HTTP/1.1" 200 8068
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/ HTTP/1.1" 200 8068
+"GET /admin/alocar/turma/ HTTP/1.1" 200 12384
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/turma/ HTTP/1.1" 200 13955
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/ HTTP/1.1" 200 8068
+"GET /admin/alocar/bloco/ HTTP/1.1" 200 4295
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/bloco/add/ HTTP/1.1" 200 4037
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /listalocacao/ HTTP/1.1" 200 6502
+"GET /detalhealocacao/6/ HTTP/1.1" 200 3780
+C:\Users\shaba\PycharmProjects\alocacao\alocar\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /detalhealocacao/6/ HTTP/1.1" 200 3780
+"GET /usuarios/sair/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2123
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 1909
+Internal Server Error: /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'translate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\shaba\PycharmProjects\alocacao\usuarios\views.py", line 77, in password_reset_confirm
+    return render(request, template_name, context)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\shaba\PycharmProjects\alocacao\venv\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'translate', expected 'endblock'. Did you forget to register or load this tag?
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 500 168420
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 1969
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1850
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 2671
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 2628
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 2375
+"GET /usuarios/confirmar-nova-senha/1cd4847ff23a1fe784bc14f80982260b2d98d20e3efd08e74524a20e HTTP/1.1" 200 2266
+"GET /usuarios/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/usuarios/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/entrar/?next=/usuarios/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"GET /usuarios/nova-senha/ HTTP/1.1" 200 2123
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/nova-senha/ HTTP/1.1" 302 0
+"GET /usuarios/confirmar-nova-senha/b70b419cff596316eb375a5fce99684c8c08e490749672f4a84ce3eb HTTP/1.1" 200 2007
+"GET /usuarios/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/usuarios/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
