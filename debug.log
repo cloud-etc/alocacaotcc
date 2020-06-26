@@ -2550,3 +2550,115 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 't
 "GET /usuarios/ HTTP/1.1" 302 0
 "GET /usuarios/entrar/?next=/usuarios/ HTTP/1.1" 200 2540
 "GET /static/images/bg.jpg HTTP/1.1" 404 1663
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6230
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2540
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 6502
+"GET /admin/ HTTP/1.1" 200 8068
+"GET /admin/ HTTP/1.1" 200 8068
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4892
+C:\Users\shaba\PycharmProjects\alocacao\alocar\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4658
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4400
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4992
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4400
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/horario/1/delete/ HTTP/1.1" 200 2840
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4400
+"GET /admin/ HTTP/1.1" 200 8108
+"GET /admin/alocar/sala/ HTTP/1.1" 200 6581
+"GET /admin/alocar/sala/1/change/ HTTP/1.1" 200 8517
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 6783
+"GET /admin/alocar/sala/1/change/ HTTP/1.1" 200 8509
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/sala/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/sala/ HTTP/1.1" 200 6783
+"GET /admin/alocar/sala/ HTTP/1.1" 200 6560
+"GET /admin/ HTTP/1.1" 200 8122
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4943
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4918
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/1/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/1/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4771
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4637
+"GET /admin/alocar/horario/2/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"POST /admin/alocar/horario/2/change/ HTTP/1.1" 302 0
+"GET /admin/alocar/horario/ HTTP/1.1" 200 4929
+"GET /admin/alocar/horario/2/change/ HTTP/1.1" 200 4379
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+"GET /admin/alocar/horario/2/history/ HTTP/1.1" 200 2530
+"GET /admin/ HTTP/1.1" 200 8297
+"GET /admin/usuarios/user/ HTTP/1.1" 200 6081
+"GET /admin/usuarios/user/add/ HTTP/1.1" 200 6529
+"GET /admin/jsi18n/ HTTP/1.1" 200 7144
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2005
+"GET /static/css/mdb.min.css HTTP/1.1" 200 275868
+"GET /static/assets/pessoal.css HTTP/1.1" 404 1678
+"GET /static/assets/extra.css HTTP/1.1" 404 1672
+"GET /static/css/style.css HTTP/1.1" 200 1099
+"GET /static/css/bootstrap.min.css HTTP/1.1" 200 159515
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6230
+"GET /listalocacao/ HTTP/1.1" 302 0
+"GET /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 200 2540
+"GET /static/assets/custom.min.css HTTP/1.1" 200 2531
+"GET /static/assets/estilo.css HTTP/1.1" 200 852
+"GET /static/assets/bootstrap.min.css HTTP/1.1" 200 127381
+"GET /static/assets/style.css HTTP/1.1" 200 1292
+"GET /static/images/bg.jpg HTTP/1.1" 404 1663
+"POST /usuarios/entrar/?next=/listalocacao/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 4280
+"GET /addsala/ HTTP/1.1" 200 8211
+"GET /addbloco/ HTTP/1.1" 200 3866
+"POST /addbloco/ HTTP/1.1" 200 4589
+"POST /addbloco/ HTTP/1.1" 200 4673
+"GET /addhorario/ HTTP/1.1" 200 3884
+"POST /addhorario/ HTTP/1.1" 200 4595
+"POST /addhorario/ HTTP/1.1" 200 4689
+"GET /addsala/ HTTP/1.1" 200 8249
+"POST /addsala/ HTTP/1.1" 302 0
+"GET /addsala/ HTTP/1.1" 200 9819
+"GET /addturma/ HTTP/1.1" 200 8838
+"POST /addturma/ HTTP/1.1" 200 10889
+"GET /listsalaturma/ HTTP/1.1" 200 10649
+"POST /listsalaturma/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 4384
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocarView.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /listalocacao/ HTTP/1.1" 200 4280
+"GET /listsalaturma/ HTTP/1.1" 200 10649
+"POST /listsalaturma/ HTTP/1.1" 302 0
+"GET /listalocacao/ HTTP/1.1" 200 4383
+C:\Users\shaba\PycharmProjects\alocacao\alocar\views\alocarView.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /addturma/ HTTP/1.1" 200 10889
+"GET /listsalaturma/ HTTP/1.1" 200 10649

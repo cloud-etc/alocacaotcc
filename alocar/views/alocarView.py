@@ -71,28 +71,28 @@ def listSalaTurma(request, *args, **kwargs):
 
 
         if alocacao.maior():
-            messages.info(
+            messages.error(
                 request, 'Quantidade de alunos é maior do que a capacidade da sala')
             return redirect('alocar:listalocacao')
 
 
         if alocacao.turma_computador():
             if alocacao.sala_computador():
-                messages.info(
+                messages.error(
                     request, 'Essa turma precisa de computador')
                 return redirect('alocar:listalocacao')
 
         
         if alocacao.turma_internet():
             if alocacao.sala_internet():
-                messages.info(
+                messages.error(
                 request, 'Essa turma precisa de internet')
                 return redirect('alocar:listalocacao')
 
 
         if alocacao.turma_projetor():
             if alocacao.sala_projetor():
-                messages.info(
+                messages.error(
                     request, 'Essa turma precisa de projetor')
                 return redirect('alocar:listalocacao')
 
@@ -101,7 +101,7 @@ def listSalaTurma(request, *args, **kwargs):
                 Alocar.objects.filter(horario=horario) & \
                 Alocar.objects.filter(sala=sala)
         if query:
-            messages.info(request, 'Essa sala já está alocada para esse dia e horário')
+            messages.warning(request, 'Essa sala já está alocada para esse dia e horário')
             return redirect('alocar:listalocacao')
 
 
@@ -109,7 +109,7 @@ def listSalaTurma(request, *args, **kwargs):
                 Alocar.objects.filter(horario=horario) & \
                 Alocar.objects.filter(turma__professor=turma.professor)
         if query:
-            messages.info(
+            messages.error(
                 request, 'Esse Professor já está em uma turma para esse dia e horário')
             return redirect('alocar:listalocacao')
 
@@ -118,7 +118,7 @@ def listSalaTurma(request, *args, **kwargs):
             Alocar.objects.filter(horario=horario) & \
             Alocar.objects.filter(turma=turma)
         if query:
-            messages.info(
+            messages.error(
                 request, 'Essa turma já está alocada para esse dia e horário')
             return redirect('alocar:listalocacao')
 
@@ -126,7 +126,7 @@ def listSalaTurma(request, *args, **kwargs):
         query = Alocar.objects.filter(turma=turma) & \
                 Alocar.objects.filter(sala=sala)
         if query:
-            messages.info(request, 'Essa turma já está alocada')
+            messages.error(request, 'Essa turma já está alocada')
             return redirect('alocar:listalocacao')
 
         else:
@@ -214,7 +214,7 @@ def delAlocacao(request, id):
 
         else:
             if not alocar.user == request.user:
-                messages.info(
+                messages.error(
                 request, 'Você NÃO pode apagar essa alocação. Porque foi feita por outro usuário')
                 return redirect('alocar:listalocacao')
             
@@ -222,21 +222,6 @@ def delAlocacao(request, id):
     context['alocar'] = alocar
     return render(request, 'alocar/delalocacao.html')
 
-
-
-@login_required()
-def detalhealocacao(request, id):
-    context = {}
-    alocar = get_object_or_404(Alocar, id=id)
-
-    context['alocar'] = alocar
-    template_name = 'alocar/detalhealocacao.html'
-    return render(request, template_name, context)
-
-
-def permissao1(request):
-    context = { }
-    return render(request, 'alocar/permissao1.html', context)
 
 
 
@@ -457,6 +442,140 @@ class Relatorios(TemplateView):
 
 relatorios = Relatorios.as_view()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @login_required
 def telapararelatorio(request):
     varios = request.GET.get('varios', None)
@@ -481,6 +600,29 @@ def telapararelatorio(request):
 
     context = {'alocacoes': alocacoes, 'alocapage': alocapage}
     return render(request, template_name, context)
+
+
+
+
+
+
+
+
+@login_required()
+def detalhealocacao(request, id):
+    context = {}
+    alocar = get_object_or_404(Alocar, id=id)
+
+    context['alocar'] = alocar
+    template_name = 'alocar/detalhealocacao.html'
+    return render(request, template_name, context)
+
+
+def permissao1(request):
+    context = { }
+    return render(request, 'alocar/permissao1.html', context)
+
+
 
 
 

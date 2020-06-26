@@ -9,35 +9,7 @@ from django.contrib import messages
 
 User = get_user_model()
 
-@login_required
-def index(request):
-    template_name = 'usuarios/index.html'
-    context = {}
-    return render(request, template_name, context)
 
-
-# def register(request):
-#     template_name = 'usuarios/register.html'
-#     if request.method == 'POST':
-#         form = RegisterForm(request.POST)
-#         if form.is_valid():
-#             user = form.save()
-#             user = authenticate(
-#                 username=user.username, password=form.cleaned_data['password1'])
-#             login(request, user)
-#             return redirect('usuarios:index')
-#     else:
-#         form = RegisterForm()
-#     context = {
-#         'form': form
-#     }
-#     return render(request, template_name, context)
-
-
-# '''
-# funcao para alterar senha na tela de login,
-# com o usuario fora do sistema sem logar
-# '''
 def password_reset(request):
     template_name = 'usuarios/password_reset.html'
     if request.method == 'POST':
@@ -48,6 +20,44 @@ def password_reset(request):
     else:
         form = PasswordResetForm()
     return render(request, template_name, { 'form': form })
+
+
+
+# funcao para alterar dados
+# da conta do usuario logado
+@login_required
+def edit(request):
+    template_name = 'usuarios/edit.html'
+    context = {}
+    if request.method == 'POST':
+        form = EditAccountForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Os dados da sua conta foram alterados com sucesso')
+            return redirect('usuarios:index')
+    else:
+        form = EditAccountForm(instance=request.user)
+    context['form'] = form
+    return render(request, template_name, context)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # '''
@@ -79,22 +89,7 @@ def password_reset_confirm(request, key):
 
 
 
-# funcao para alterar dados
-# da conta do usuario logado
-@login_required
-def edit(request):
-    template_name = 'usuarios/edit.html'
-    context = {}
-    if request.method == 'POST':
-        form = EditAccountForm(request.POST, instance=request.user)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Os dados da sua conta foram alterados com sucesso')
-            return redirect('usuarios:index')
-    else:
-        form = EditAccountForm(instance=request.user)
-    context['form'] = form
-    return render(request, template_name, context)
+
 
 # '''
 # funcao para alterar senha com o usuario ja logado no sistema
@@ -115,3 +110,10 @@ def edit_password(request):
     return render(request, template_name, context)
 
 
+
+
+@login_required
+def index(request):
+    template_name = 'usuarios/index.html'
+    context = {}
+    return render(request, template_name, context)

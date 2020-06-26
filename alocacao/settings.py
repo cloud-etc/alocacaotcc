@@ -27,14 +27,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #aplicações do usuario
+    #aplicacoes e bibliotecas de terceiros
     'import_export',
     'crispy_forms',
     'widget_tweaks',
-    'alocar',
-    'usuarios',
     'bootstrap4',
     'stdimage',
+    #aplicações do usuario
+    'alocar',
+    'usuarios',
+
 ]
 
 #renderizar form no template
