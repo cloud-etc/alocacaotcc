@@ -29,7 +29,7 @@ python-decouple==3.3
 python-http-client==3.2.7
 python-utils==2.3.0
 pytz==2019.3
-PyYAML==5.3.1
+PyYAML==5.4
 six==1.14.0
 soupsieve==1.9.5
 sqlparse==0.3.0
